@@ -154,11 +154,24 @@ class User
     {
         //Si $type=0, il sagit de trier en fonction des contacts
         //Si $type=1, il sagit de trier en fonction des groupes
+        $groupe=1;
+        $contact=0;
+
         $connexion=DAO::getConnection();
+
+        if($type==$groupe)
+        {
+            //$query=
+        }
+        else if ($type==$contact)
+        {
+
+        }
 
         $query_contact="SELECT * FROM contact WHERE id_user=:id_user";
 
-        $query_group="SELECT * FROM contact WHERE id_user=:id_user AND id_contact IN (SELECT id_contact FROM contact_groupe WHERE )";
+        $query_group="SELECT * FROM contact WHERE id_user=:id_user AND id_contact IN (SELECT id_contact FROM contact_groupe WHERE id_groupe=:id_groupe)";
+
         $requete=$connexion->prepare("SELECT * FROM contact WHERE id_user=:id_user");
         $requete->bindValue(':id_user',$this->getId());
         $requete->execute();

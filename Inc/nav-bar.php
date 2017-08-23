@@ -5,9 +5,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php" style="position: relative; top: -30px;">
-            <img src="medias/image/logo.png" width="100">
-            <span style="color: #fff; position: relative; top: -45px; left: 90px;">SMS Notifier</span>
+        <a class="navbar-brand" href="index.php" style="position: relative; top: -20px;">
+            <img src="medias/image/logo.png" width="60">
+            <span style="color: #fff; position: relative; top: -40px; left: 70px;">SMS Notifier</span>
         </a>
     </div>
     <div class="navbar-collapse collapse" id="my-navbar">

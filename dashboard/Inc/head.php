@@ -2,6 +2,7 @@
 <!-- Bootstrap -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+<link href="../css/font-awesome.css" rel="stylesheet" media="screen">
 <link href="vendors/easypiechart/jquery.easy-pie-chart.css" rel="stylesheet" media="screen">
 <link href="assets/styles.css" rel="stylesheet" media="screen">
 <link href="../medias/image/logo.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />

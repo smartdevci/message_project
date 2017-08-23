@@ -1,0 +1,288 @@
+body{
+    background-color: #fafafa;
+}
+
+/*BARRE DE NAVIGATION*/
+
+#navigation{
+    border-radius: 0;
+    height: 80px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    clear: both;
+}
+
+
+.bg-color{
+    background-color: #337ab7;
+}
+
+/*LIEN DE PAGES*/
+.navbar-inverse .navbar-nav > .page-active > a
+{
+    color: #f26721;
+    font-weight: bold;
+    /*height: 100px;*/
+    padding-top: 27px;
+    margin-top: -15px;
+    border-top: solid 3px #f26721;
+    font-size: 1.1em;
+}
+
+.navbar-inverse .navbar-nav a:hover{
+    color: #f2860c;
+    font-weight: bold;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.navbar-brand:hover,
+ nav{
+    margin-bottom: 10px;
+}
+
+
+/*SOUS MENU*/
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #337ab7;
+    font-weight: bold;
+}
+
+
+
+.menu-lien{
+    margin-right: 50px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+
+.fa-2x{
+    font-size: 1.5em;
+}
+
+
+/*SLIDER*/
+.slideshow figure img{
+    align-content: center;
+    margin-top: 100px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 1180px;
+    height: 460px;
+
+    background: #FFF;
+    background: -webkit-linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+    background: -moz-linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+    background: -ms-linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+    background: -o-linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+    background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+    /*-- CSS3 --*/
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+
+    /*
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0, 0.2);
+    -moz-box-shadow: 0 0 2px rgba(0,0,0, 0.2);
+    box-shadow: 0 0 2px rgba(0,0,0, 0.2);
+    */
+}
+
+.panel-heading{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+.texte, body{
+    font-size: 1.5em;
+    font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.input-lg{
+    border-radius: 3px;
+}
+
+
+button[type="submit"]{
+    font-size: 1.2em;
+}
+
+
+footer{
+    background-color: #337ab7;
+    color: #fff;
+    height: 50px;
+    margin-top: 30px;
+}
+
+
+footer .blanc{
+    padding-top: 10px;
+}
+
+
+
+/*
+/* Created by Filipe Pina
+ * Specific styles of signin, register, component
+ */
+/*
+ * General styles
+ */
+#playground-container {
+    height: 500px;
+    overflow: hidden !important;
+    -webkit-overflow-scrolling: touch;
+}
+body, html{
+    height: 100%;
+    background-repeat: no-repeat;
+    /*background:url(https://i.ytimg.com/vi/4kfXjatgeEU/maxresdefault.jpg);*/
+    font-family: 'Oxygen', sans-serif;
+    background-size: cover;
+}
+
+.main{
+    width: 100%;
+    margin: -15px auto;
+    padding-bottom: 50px;
+}
+
+h1.title {
+    font-size: 30px;
+    font-family: 'Passion One', cursive;
+    font-weight: 400;
+}
+
+hr{
+    width: 100%;
+    color: #fff;
+}
+
+/*.form-group{*/
+    /*margin-top: 15px;*/
+    /*!*margin-bottom: 5px;*!*/
+/*}*/
+
+label{
+    margin-bottom: 15px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.main-login{
+    background-color: #fff;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+.form-control {
+    height: auto!important;
+    padding: 8px 12px !important;
+}
+.input-group {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+}
+#button {
+    border: 1px solid #ccc;
+    margin-top: 28px;
+    padding: 6px 12px;
+    color: #666;
+    text-shadow: 0 1px #fff;
+    cursor: pointer;
+    -moz-border-radius: 3px 3px;
+    -webkit-border-radius: 3px 3px;
+    border-radius: 3px 3px;
+    -moz-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    -webkit-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    background: #f5f5f5;
+    background: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #eeeeee));
+    background: -webkit-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -o-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -ms-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#eeeeee', GradientType=0);
+}
+.main-center{
+    margin-top: 30px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px 40px;
+    background:#009edf;
+    color: #FFF;
+    text-shadow: none;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+}
+span.input-group-addon i {
+    color: #009edf;
+    font-size: 17px;
+}
+
+.login-button{
+    margin-top: 5px;
+}
+
+.login-register{
+    font-size: 11px;
+    text-align: center;
+}
+
+
+@media (min-width: 769px)  {
+    .main-center{
+        margin-top: 30px;
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 10px 40px;
+        /*background:#009edf;*/
+        color: #FFF;
+        text-shadow: none;
+        -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+        -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+        box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+        position: relative;
+        left: 175px;
+    }
+
+}

@@ -45,6 +45,8 @@ require_once 'modele/modele_dashboard.php';
 
                 </div>
             </div>
+            <div class="clearfix"></div>
+
             <hr>
             <?php
                 include 'Inc/footer.php';

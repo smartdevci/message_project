@@ -15,7 +15,8 @@
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="jquery-ui/jquery-ui.css" rel="stylesheet" type="text/css">
-    
+    <link href="medias/image/logo.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
 
     <!-- SLIDER -->
     <link rel="stylesheet" type="text/css" href="slideshow/engine/style.css" />

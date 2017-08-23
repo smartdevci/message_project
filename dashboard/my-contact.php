@@ -46,6 +46,7 @@ include_once 'Inc/navbar.php';
 
         </div>
     </div>
+    <div class="clearfix"></div>
     <hr>
     <?php
         include 'Inc/footer.php';

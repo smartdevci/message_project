@@ -3,12 +3,12 @@
         <!-- block -->
 
         <div class="block">
-            <div class="text-right">
+            <!--<div class="text-right">
                 <span  data-toggle="modal" data-target="#add_contact" title="Ajouter nouveau contact" style="cursor:pointer">Ajouter contact
                 </span>
 
             </div>
-
+-->
 
 
 
@@ -50,7 +50,7 @@
 
 
             <div class="navbar navbar-inner block-header">
-                <div class="muted pull-left"><b>Contacts</b></div>
+                <div class="muted pull-left"><b>Contacts&emsp;</b><span  data-toggle="modal" data-target="#add_contact" title="Ajouter nouveau contact" class="pull-right fa fa-plus-circle fa-2x" style="cursor:pointer; color: #00a0d2; font-size: 20px"></span></div>
                 <div class="pull-right"><span class="badge badge-info"><?php echo number_format(sizeof($liste_contact),0,","," ") ?></span>
 
                 </div>
@@ -108,11 +108,11 @@
 
 
         <div class="block">
-            <div class="text-right">
+           <!-- <div class="text-right">
                 <span  data-toggle="modal" data-target="#add_groupe" title="Ajouter nouveau groupe" style="cursor:pointer">Ajouter groupe
                 </span>
 
-            </div>
+            </div>-->
 
 
 
@@ -149,9 +149,9 @@
 
 
 
-            <div class="block">
+<!--            <div class="block">-->
             <div class="navbar navbar-inner block-header">
-                <div class="muted pull-left">Groupe</div>
+                <div class="muted pull-left"><b>Groupe&emsp;</b><span  data-toggle="modal" data-target="#add_groupe" title="Ajouter nouveau groupe" class="pull-right fa fa-plus-circle fa-2x" style="cursor:pointer; color: #00a0d2; font-size: 20px"></span></div>
                 <div class="pull-right"><span class="badge badge-info"> <?php echo number_format(sizeof($liste_groupe),0,","," ") ?></span>
 
                 </div>
@@ -195,7 +195,7 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+<!--        </div>-->
         <!-- /block -->
     </div>
 </div>

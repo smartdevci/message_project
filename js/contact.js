@@ -186,7 +186,6 @@ $('.modifier_groupe').click(function(){
     old_nom_groupe=$(class_nom_groupe+' td.nom_groupe').html().trim();
     id_modification_actuel_groupe=$(this).attr('data-id');
 
-
     $(class_nom_groupe+' td.nom_groupe').html('<input type="text" class="nom_groupe_modifier" value="'+$(class_nom_groupe+' td.nom_groupe').html().trim()+'"/>');
 });
 

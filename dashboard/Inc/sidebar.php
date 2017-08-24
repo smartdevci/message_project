@@ -1,15 +1,12 @@
 <div class="span3" id="sidebar">
     <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
-       <li <?php echo ($_SESSION['page']=='envoi') ? 'class="active"':''; ?>>
-            <a href="./"><i class="icon-chevron-right"></i> Envoi SMS</a>
-        </li>
-
+       
         <?php
         if($user->type=='client')
         {
         ?>
             <li <?php echo ($_SESSION['page']=='dashboard') ? 'class="active"':''; ?>>
-                <a href="dashboard.php"><i class="icon-chevron-right"></i> Tableau de bord</a>
+                <a href="./"><i class="icon-chevron-right"></i> Tableau de bord</a>
             </li>
         <?php
         }
@@ -22,6 +19,12 @@
         <?php
         }
         ?>
+
+       <li <?php echo ($_SESSION['page']=='envoi') ? 'class="active"':''; ?>>
+            <a href="envoi.php"><i class="icon-chevron-right"></i> Envoi SMS</a>
+        </li>
+
+        
 
 
         <li <?php echo ($_SESSION['page']=='contact') ? 'class="active"':''; ?>>

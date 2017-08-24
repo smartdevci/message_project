@@ -10,6 +10,6 @@ require_once '../_class/all_class.php';
 $id_groupe=$_GET['id_groupe'];
 $id_contact=$_GET['id_contact'];
 
-DAO::insertContactInGroup($id_contact,$id_groupe);
+DAO::deleteContactInGroup($id_contact,$id_groupe);
 
 ?>

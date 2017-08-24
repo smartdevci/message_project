@@ -334,11 +334,23 @@ function gestion_contact_data() {
            url="../execute/supprimer_contact_in_groupe.php?id_groupe="+$(this).attr('data-id_groupe')+"&id_contact="+$(this).attr('data-id_contact');
        }
 
-       alert(url);
-
+        $.ajax({
+            url : url,
+            type : 'GET',
+            dataType : 'html',
+            success : function(code_html, statut){},
+            error : function(resultat, statut, erreur){}
+        });
 
     });
 }
+
+
+
+
+$('.actualiser_page').click(function(){
+    window.location="";
+});
 
 
 

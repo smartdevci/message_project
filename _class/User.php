@@ -144,7 +144,7 @@ class User
     public function getContact()
     {
         $connexion=DAO::getConnection();
-        $requete=$connexion->prepare("SELECT * FROM contact WHERE id_user=:id_user");
+        $requete=$connexion->prepare("SELECT * FROM contact WHERE id_user=:id_user ORDER BY nom");
         $requete->bindValue(':id_user',$this->getId());
         $requete->execute();
         return $requete->fetchAll();
@@ -153,7 +153,7 @@ class User
     public function getContactGroup($id_groupe)
     {
         $connexion=DAO::getConnection();
-        $requete=$connexion->prepare("SELECT id_contact FROM contact WHERE id_user=:id_user AND id_contact IN (SELECT id_contact FROM contact_groupe WHERE id_groupe=:id_groupe)");
+        $requete=$connexion->prepare("SELECT id_contact FROM contact WHERE id_user=:id_user AND id_contact IN (SELECT id_contact FROM contact_groupe WHERE id_groupe=:id_groupe) ");
         $requete->bindValue(':id_user',$this->getId());
         $requete->bindValue(':id_groupe',$id_groupe);
         $requete->execute();
@@ -178,7 +178,7 @@ class User
 
         if($type==$groupe)
         {
-            $query="SELECT * FROM contact WHERE id_user=:id_user AND id_contact IN (SELECT id_contact FROM contact_groupe WHERE id_groupe=:id_groupe)";
+            $query="SELECT * FROM contact WHERE id_user=:id_user AND id_contact IN (SELECT id_contact FROM contact_groupe WHERE id_groupe=:id_groupe) ORDER BY nom";
             $requete=$connexion->prepare($query);
             $requete->bindValue(':id_user',$this->getId());
             $requete->bindValue(':id_groupe',$valeur);
@@ -187,7 +187,7 @@ class User
         }
         else if ($type==$contact)
         {
-            $query="SELECT * FROM contact WHERE id_user=:id_user AND  CONCAT(nom,' ',numero) LIKE '%".$valeur."%'";
+            $query="SELECT * FROM contact WHERE id_user=:id_user AND  CONCAT(nom,' ',numero) LIKE '%".$valeur."%' ORDER BY nom";
             $requete=$connexion->prepare($query);
             $requete->bindValue(':id_user',$this->getId());
             $requete->execute();

@@ -15,8 +15,8 @@
       <file leaf-file-name="envoi.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashboard/envoi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="966">
-              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <state relative-caret-position="945">
+              <caret line="69" column="98" lean-forward="false" selection-start-line="69" selection-start-column="98" selection-end-line="69" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -371,12 +371,12 @@
       <updated>1502792861244</updated>
       <workItem from="1502792862547" duration="17492000" />
       <workItem from="1503059235336" duration="104357000" />
-      <workItem from="1503517580111" duration="23069000" />
+      <workItem from="1503517580111" duration="23713000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144918000" />
+    <option name="totallyTimeSpent" value="145562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1331" extended-state="6" />
@@ -857,8 +857,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/envoi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state relative-caret-position="945">
+          <caret line="69" column="98" lean-forward="false" selection-start-line="69" selection-start-column="98" selection-end-line="69" selection-end-column="98" />
           <folding />
         </state>
       </provider>

@@ -66,8 +66,8 @@ include_once 'Inc/navbar.php';
                                                 <label class="control-label" for="date01">No Destinataire(s)</label>
                                                 <div class="controls">
                                                     <input type="text" name="recipient" class="span6 recipient"  placeholder=""  >
-                                                    <input type="button" value="Ajouter" title="Ajouter à partir des contacts" />
-                                                    <input type="button" value="Ajouter" title="Ajouter à partir des contacts" />
+                                                    <input type="button" value="Ajouter numero" title="Ajouter à partir des contacts" />
+                                                    <input type="button" value="Ajouter un contact" title="Ajouter à partir des contacts" />
 
                                                     <!--<textarea name="recipient"  class="input-xlarge textarea form-control recipient" id="date01" style="width: 85%; height: 70px" placeholder="Ex : 22507001122,22505667788,22541223355,..."></textarea>-->
         <!--                                            <p class="help-block">In addition to freeform text, any HTML5 text-based input appears like so.</p>-->

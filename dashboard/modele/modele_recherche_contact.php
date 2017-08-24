@@ -6,19 +6,12 @@
  * Time: 11:58
  */
 session_start();
+define('GROUPE',1);
+define('CONTACT',0);
 require_once '../_class/all_class.php';
 //session_start();
-$groupe="";
+$groupe=$_GET['type'];
 $valeur=$_GET['valeur'];
-
-if(isset($_GET['groupe']))
-{
-    $groupe=1;
-}
-else if(isset($_GET['contact']))
-{
-    $groupe=0;
-}
 
 
 $id=$_SESSION['com_message__id'];

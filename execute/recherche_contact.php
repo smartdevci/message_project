@@ -8,11 +8,12 @@
 
 
 require_once '../dashboard/modele/modele_recherche_contact.php';
+//Total des contact##nom du groupe##données
+echo sizeof($liste_contact)."##";
 ?>
 
 
 
-<table class="table table-striped tableau_contact">
     <thead>
     <tr>
         <th>#</th>
@@ -46,4 +47,3 @@ require_once '../dashboard/modele/modele_recherche_contact.php';
 
 
     </tbody>
-</table>

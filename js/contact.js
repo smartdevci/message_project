@@ -247,17 +247,58 @@ $('.delete_groupe').click(function(){
 
 
 /***********************************************************************************************************************/
+/**********************************************RECHERCHE****************************************************************/
+/***********************************************************************************************************************/
 
-/*
-$('.bouton_add_contact').click(function(){
-    var url="../execute/add_contact.php?nom="+$('.ajout_nom').val()+"&numero="+$('.ajout_numero').val();
-    //alert(url);
+$('.recherche_contact').keyup(function(){
+
+    var class_nom_groupe='.ligne_groupe'+$(this).attr('data-id');
+    $(class_nom_groupe).remove();
+
+    var valeur=$('.recherche_contact').val().trim();
+    var texte=(valeur=='')?'Tous les contacts':'Contacts';
+    majContact(0,valeur,texte);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************************************************************/
+/**********************************************FONCTION*****************************************************************/
+/***********************************************************************************************************************/
+
+
+function majContact(type,valeur,texteRecherche)
+{
+    var url="../execute/recherche_contact.php?type="+type+"&valeur="+valeur;
     $.ajax({
         url : url,
         type : 'GET',
         dataType : 'html',
         success : function(code_html, statut){
-            $('.tableau_contact').html(  $('.tableau_contact').html()+code_html );
+            //Format de retour : Total des contact##nom du groupe##données
+            var tab_retour=code_html.split("##");
+            var nombre=tab_retour[0];
+            var code=tab_retour[1];
+            $('.titre_recherche').html(texteRecherche);
+            $('.tableau_contact').html(code);
+            $('.nombre_contact').html(nombre);
+
         },
         error : function(resultat, statut, erreur){
             alert(resultat.responseText);
@@ -265,4 +306,4 @@ $('.bouton_add_contact').click(function(){
 
 
     });
-});*/
+}

@@ -51,13 +51,13 @@
 
             <div class="navbar navbar-inner block-header">
                 <div class="muted pull-left"><b>Contacts&emsp;</b><span  data-toggle="modal" data-target="#add_contact" title="Ajouter nouveau contact" class="pull-right fa fa-plus-circle fa-2x" style="cursor:pointer; color: #00a0d2; font-size: 20px"></span></div>
-                <div class="pull-right"><span class="badge badge-info"><?php echo number_format(sizeof($liste_contact),0,","," ") ?></span>
+                <div class="pull-right"><span class="badge badge-info nombre_contact"><?php echo number_format(sizeof($liste_contact),0,","," ") ?></span>
 
                 </div>
             </div>
             <div class="navbar navbar-inner block-header">
-                <div class="muted pull-left nom_groupe">Tout les contact</div>
-                <div class="pull-right"><input type="search" placeholder="Rechercher"/></span>
+                <div class="muted pull-left nom_groupe titre_recherche">Tous les contact</div>
+                <div class="pull-right "><input type="search" placeholder="Rechercher" class="recherche_contact"/></span>
 
                 </div>
             </div>

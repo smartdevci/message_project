@@ -50,8 +50,8 @@ function validate_modification() {
         $('.cancel_modification'+$(this).attr('data-id')).hide();
 
         var class_nom='.ligne_contact'+$(this).attr('data-id');
-        var nom=$('.nom_modifier').val();
-        var numero=$('.numero_modifier').val();
+        var nom=$('.nom_modifier').val().trim();
+        var numero=$('.numero_modifier').val().trim();
 
         $(class_nom+' td.nom').html(nom);
         $(class_nom+' td.numero').html(numero);
@@ -121,7 +121,7 @@ delete_contact();
 
 
 $('.bouton_add_contact').click(function(){
-    var url="../execute/add_contact.php?nom="+$('.ajout_nom').val()+"&numero="+$('.ajout_numero').val();
+    var url="../execute/add_contact.php?nom="+$('.ajout_nom').val().trim()+"&numero="+$('.ajout_numero').val().trim();
     //alert(url);
     $.ajax({
         url : url,
@@ -142,7 +142,7 @@ $('.bouton_add_contact').click(function(){
 
 
 $('.bouton_add_groupe').click(function(){
-    var url="../execute/add_groupe.php?nom="+$('.nom_groupe_ajouter').val();
+    var url="../execute/add_groupe.php?nom="+$('.nom_groupe_ajouter').val().trim();
     //alert(url);
     $.ajax({
         url : url,
@@ -183,11 +183,11 @@ $('.modifier_groupe').click(function(){
     $('.cancel_modification_groupe'+id_modification_actuel_groupe).click();
     var class_nom_groupe='.ligne_groupe'+$(this).attr('data-id');
     //alert(class_nom);
-    old_nom_groupe=$(class_nom_groupe+' td.nom_groupe').html();
+    old_nom_groupe=$(class_nom_groupe+' td.nom_groupe').html().trim();
     id_modification_actuel_groupe=$(this).attr('data-id');
 
 
-    $(class_nom_groupe+' td.nom_groupe').html('<input type="text" class="nom_groupe_modifier" value="'+$(class_nom_groupe+' td.nom_groupe').html()+'"/>');
+    $(class_nom_groupe+' td.nom_groupe').html('<input type="text" class="nom_groupe_modifier" value="'+$(class_nom_groupe+' td.nom_groupe').html().trim()+'"/>');
 });
 
 /***********************************************************************************************************************/
@@ -198,7 +198,7 @@ $('.validate_modification_groupe').click(function(){
     $('.cancel_modification_groupe'+$(this).attr('data-id')).hide();
 
     var class_nom_groupe='.ligne_groupe'+$(this).attr('data-id');
-    var nom_groupe=$('.nom_groupe_modifier').val();
+    var nom_groupe=$('.nom_groupe_modifier').val().trim();
 
     $(class_nom_groupe+' td.nom_groupe').html(nom_groupe);
     id_modification_actuel_groupe=0;

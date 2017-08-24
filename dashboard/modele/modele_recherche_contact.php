@@ -9,6 +9,8 @@ session_start();
 require_once '../_class/all_class.php';
 //session_start();
 $groupe="";
+$valeur=$_GET['valeur'];
+
 if(isset($_GET['groupe']))
 {
     $groupe=1;

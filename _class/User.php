@@ -161,20 +161,24 @@ class User
 
         if($type==$groupe)
         {
-            //$query=
+            $query="SELECT * FROM contact WHERE id_user=:id_user AND id_contact IN (SELECT id_contact FROM contact_groupe WHERE id_groupe=:id_groupe)";
+            $requete=$connexion->prepare($query);
+            $requete->bindValue(':id_user',$this->getId());
+            $requete->bindValue(':id_groupe',$valeur);
+            $requete->execute();
+
         }
         else if ($type==$contact)
         {
+            $query="SELECT * FROM contact WHERE id_user=:id_user AND  CONCAT(nom,' ',numero) LIKE '%".$valeur."%'";
+            $requete=$connexion->prepare($query);
+            $requete->bindValue(':id_user',$this->getId());
+            $requete->execute();
 
         }
 
-        $query_contact="SELECT * FROM contact WHERE id_user=:id_user";
 
-        $query_group="SELECT * FROM contact WHERE id_user=:id_user AND id_contact IN (SELECT id_contact FROM contact_groupe WHERE id_groupe=:id_groupe)";
 
-        $requete=$connexion->prepare("SELECT * FROM contact WHERE id_user=:id_user");
-        $requete->bindValue(':id_user',$this->getId());
-        $requete->execute();
         return $requete->fetchAll();
     }
 

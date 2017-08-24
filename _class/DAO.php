@@ -99,4 +99,36 @@ class DAO
 
 
 
+    public static function deleteContactInGroup($id_contact,$id_groupe)
+    {
+        $connexion=DAO::getConnection();
+        $requete=$connexion->prepare("
+            DELETE FROM contact_groupe WHERE id_contact=:id_contact AND id_groupe=:id_groupe
+        ");
+
+        $requete->bindValue(':id_contact',$id_contact,PDO::PARAM_INT);
+        $requete->bindValue(':id_groupe',$id_groupe,PDO::PARAM_INT);
+        $requete->execute();
+
+    }
+
+
+    public static function insertContactInGroup($id_contact,$id_groupe)
+    {
+        $connexion=DAO::getConnection();
+        $requete=$connexion->prepare("
+            INSERT INTO contact_groupe (id_contact,id_groupe) VALUES (:id_contact,:id_groupe)
+        ");
+
+        $requete->bindValue(':id_contact',$id_contact,PDO::PARAM_INT);
+        $requete->bindValue(':id_groupe',$id_groupe,PDO::PARAM_INT);
+        $requete->execute();
+
+    }
+
+
+
+
+
+
 }

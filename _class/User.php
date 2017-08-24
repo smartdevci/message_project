@@ -150,6 +150,23 @@ class User
         return $requete->fetchAll();
     }
 
+    public function getContactGroup($id_groupe)
+    {
+        $connexion=DAO::getConnection();
+        $requete=$connexion->prepare("SELECT id_contact FROM contact WHERE id_user=:id_user AND id_contact IN (SELECT id_contact FROM contact_groupe WHERE id_groupe=:id_groupe)");
+        $requete->bindValue(':id_user',$this->getId());
+        $requete->bindValue(':id_groupe',$id_groupe);
+        $requete->execute();
+        $tab_id=array();
+
+        while($resultat=$requete->fetch())
+        {
+            array_push($tab_id,$resultat['id_contact']);
+        }
+        return $tab_id;
+
+    }
+
     public function getContactFilter($type,$valeur)
     {
         //Si $type=0, il sagit de trier en fonction des contacts

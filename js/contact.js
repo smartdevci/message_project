@@ -18,93 +18,104 @@ $('.validate_modification').removeClass('hidden');
 $('.cancel_modification_groupe').removeClass('hidden');
 $('.validate_modification_groupe').removeClass('hidden');
 
-/***********************************************************************************************************************/
 
-$('.modifier_contact').click(function(){
-    $('.modifier_contact'+$(this).attr('data-id')).hide();
-    $('.validate_modification'+$(this).attr('data-id')).show();
-    $('.cancel_modification'+$(this).attr('data-id')).show();
-
-
-    $('.cancel_modification'+id_modification_actuel).click();
-    var class_nom='.ligne_contact'+$(this).attr('data-id');
-    //alert(class_nom);
-    old_nom=$(class_nom+' td.nom').html();
-    old_numero=$(class_nom+' td.numero').html();
-    id_modification_actuel=$(this).attr('data-id');
-
-    $(class_nom+' td.nom').html('<input type="text" class="nom_modifier" value="'+$(class_nom+' td.nom').html()+'"/>');
-    $(class_nom+' td.numero').html('<input type="number" class="numero_modifier" value="'+$(class_nom+' td.numero').html()+'"/>');
-});
 
 /***********************************************************************************************************************/
-
-$('.validate_modification').click(function(){
-    $('.modifier_contact'+$(this).attr('data-id')).show();
-    $('.validate_modification'+$(this).attr('data-id')).hide();
-    $('.cancel_modification'+$(this).attr('data-id')).hide();
-
-    var class_nom='.ligne_contact'+$(this).attr('data-id');
-    var nom=$('.nom_modifier').val();
-    var numero=$('.numero_modifier').val();
-
-    $(class_nom+' td.nom').html(nom);
-    $(class_nom+' td.numero').html(numero);
-    id_modification_actuel=0;
+function modifier_contact() {
+    $('.modifier_contact').click(function(){
+        $('.modifier_contact'+$(this).attr('data-id')).hide();
+        $('.validate_modification'+$(this).attr('data-id')).show();
+        $('.cancel_modification'+$(this).attr('data-id')).show();
 
 
-    var url="../execute/update_contact.php?nom="+nom+"&numero="+numero+"&id_contact="+$(this).attr('data-id');
-    $.ajax({
-        url : url,
-        type : 'GET',
-        dataType : 'html',
-        success : function(code_html, statut){},
-        error : function(resultat, statut, erreur){
-            alert(resultat.responseText);
-        }
+        $('.cancel_modification'+id_modification_actuel).click();
+        var class_nom='.ligne_contact'+$(this).attr('data-id');
+        //alert(class_nom);
+        old_nom=$(class_nom+' td.nom').html();
+        old_numero=$(class_nom+' td.numero').html();
+        id_modification_actuel=$(this).attr('data-id');
 
+        $(class_nom+' td.nom').html('<input type="text" class="nom_modifier" value="'+$(class_nom+' td.nom').html()+'"/>');
+        $(class_nom+' td.numero').html('<input type="number" class="numero_modifier" value="'+$(class_nom+' td.numero').html()+'"/>');
+    });
+}
+modifier_contact();
+
+/***********************************************************************************************************************/
+
+function validate_modification() {
+    $('.validate_modification').click(function(){
+        $('.modifier_contact'+$(this).attr('data-id')).show();
+        $('.validate_modification'+$(this).attr('data-id')).hide();
+        $('.cancel_modification'+$(this).attr('data-id')).hide();
+
+        var class_nom='.ligne_contact'+$(this).attr('data-id');
+        var nom=$('.nom_modifier').val();
+        var numero=$('.numero_modifier').val();
+
+        $(class_nom+' td.nom').html(nom);
+        $(class_nom+' td.numero').html(numero);
+        id_modification_actuel=0;
+
+
+        var url="../execute/update_contact.php?nom="+nom+"&numero="+numero+"&id_contact="+$(this).attr('data-id');
+        $.ajax({
+            url : url,
+            type : 'GET',
+            dataType : 'html',
+            success : function(code_html, statut){},
+            error : function(resultat, statut, erreur){
+                alert(resultat.responseText);
+            }
+
+
+        });
 
     });
+}
 
-});
-
+validate_modification();
 /***********************************************************************************************************************/
 
-
-$('.cancel_modification').click(function(){
-    $('.modifier_contact'+$(this).attr('data-id')).show();
-    $('.validate_modification'+$(this).attr('data-id')).hide();
-    $('.cancel_modification'+$(this).attr('data-id')).hide();
-
-
-    var class_nom='.ligne_contact'+$(this).attr('data-id');
-    $(class_nom+' td.nom').html(old_nom);
-    id_modification_actuel=0;
-    $(class_nom+' td.numero').html(old_numero);
-});
+function cancel_modification() {
+    $('.cancel_modification').click(function(){
+        $('.modifier_contact'+$(this).attr('data-id')).show();
+        $('.validate_modification'+$(this).attr('data-id')).hide();
+        $('.cancel_modification'+$(this).attr('data-id')).hide();
 
 
-/***********************************************************************************************************************/
-
-$('.delete_contact').click(function(){
-
-    var class_nom='.ligne_contact'+$(this).attr('data-id');
-    $(class_nom).remove();
-
-    var url="../execute/delete_contact.php?id_contact="+$(this).attr('data-id');
-    $.ajax({
-        url : url,
-        type : 'GET',
-        dataType : 'html',
-        success : function(code_html, statut){},
-        error : function(resultat, statut, erreur){
-            alert(resultat.responseText);
-        }
-
-
+        var class_nom='.ligne_contact'+$(this).attr('data-id');
+        $(class_nom+' td.nom').html(old_nom);
+        id_modification_actuel=0;
+        $(class_nom+' td.numero').html(old_numero);
     });
-});
+}
 
+cancel_modification();
+/***********************************************************************************************************************/
+
+function delete_contact() {
+    $('.delete_contact').click(function(){
+
+        var class_nom='.ligne_contact'+$(this).attr('data-id');
+        $(class_nom).remove();
+
+        var url="../execute/delete_contact.php?id_contact="+$(this).attr('data-id');
+        $.ajax({
+            url : url,
+            type : 'GET',
+            dataType : 'html',
+            success : function(code_html, statut){},
+            error : function(resultat, statut, erreur){
+                alert(resultat.responseText);
+            }
+
+
+        });
+    });
+}
+
+delete_contact();
 
 /***********************************************************************************************************************/
 
@@ -226,24 +237,31 @@ $('.cancel_modification_groupe').click(function(){
 
 /***********************************************************************************************************************/
 
-$('.delete_groupe').click(function(){
+function delete_groupe() {
 
-    var class_nom_groupe='.ligne_groupe'+$(this).attr('data-id');
-    $(class_nom_groupe).remove();
+    $('.delete_groupe').click(function(){
 
-    var url="../execute/delete_groupe.php?id_groupe="+$(this).attr('data-id');
-    $.ajax({
-        url : url,
-        type : 'GET',
-        dataType : 'html',
-        success : function(code_html, statut){},
-        error : function(resultat, statut, erreur){
-            alert(resultat.responseText);
-        }
+        var class_nom_groupe='.ligne_groupe'+$(this).attr('data-id');
+        $(class_nom_groupe).remove();
+
+        var url="../execute/delete_groupe.php?id_groupe="+$(this).attr('data-id');
+        $.ajax({
+            url : url,
+            type : 'GET',
+            dataType : 'html',
+            success : function(code_html, statut){},
+            error : function(resultat, statut, erreur){
+                alert(resultat.responseText);
+            }
 
 
+        });
     });
-});
+}
+
+delete_groupe();
+
+
 
 
 /***********************************************************************************************************************/
@@ -261,10 +279,66 @@ $('.recherche_contact').keyup(function(){
 });
 
 
+$('.colonne').click(function(){
+    var nom_groupe=$(this).attr('data-name');
+    var valeur=$(this).attr('data-id');
+    majContact(1,valeur,nom_groupe);
+
+});
+
+
+$('.ligne_tout').click(function(){
+    majContact(0,'',"Tous les contacts");
+});
 
 
 
 
+
+
+$('.voir_groupe').click(function(){
+
+
+    var url="../execute/gerer_contact_groupe.php?id_groupe="+$(this).attr('data-id');
+    //alert(url);
+    $.ajax({
+        url : url,
+        type : 'GET',
+        dataType : 'html',
+        success : function(code_html, statut){
+            //Format de retour : Total des contact##nom du groupe##données
+            $('.contenu_gestion_groupe').html(code_html);
+            gestion_contact_data();
+        },
+        error : function(resultat, statut, erreur){
+            alert(resultat.responseText);
+        }
+
+
+    });
+});
+
+
+function gestion_contact_data() {
+
+    $('.contact_dans_groupe').change(function(){
+
+       var url="";
+       if($(this).prop('checked')){
+           //on a cocher, on doit ajouter
+           url="../execute/ajouter_contact_in_groupe.php?id_groupe="+$(this).attr('data-id_groupe')+"&id_contact="+$(this).attr('data-id_contact');
+       }
+       else
+       {
+           //on a decocher, on doit supprimer
+           url="../execute/supprimer_contact_in_groupe.php?id_groupe="+$(this).attr('data-id_groupe')+"&id_contact="+$(this).attr('data-id_contact');
+       }
+
+       alert(url);
+
+
+    });
+}
 
 
 
@@ -299,6 +373,7 @@ function majContact(type,valeur,texteRecherche)
             $('.tableau_contact').html(code);
             $('.nombre_contact').html(nombre);
 
+            addAllEvent();
         },
         error : function(resultat, statut, erreur){
             alert(resultat.responseText);
@@ -306,4 +381,18 @@ function majContact(type,valeur,texteRecherche)
 
 
     });
+}
+
+
+
+
+
+
+function addAllEvent() {
+    delete_groupe();
+    modifier_contact();
+    validate_modification();
+    cancel_modification();
+    delete_contact();
+
 }

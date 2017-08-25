@@ -15,8 +15,8 @@
       <file leaf-file-name="envoi.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/envoi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="79" column="105" lean-forward="false" selection-start-line="79" selection-start-column="88" selection-end-line="79" selection-end-column="105" />
+            <state relative-caret-position="342">
+              <caret line="71" column="85" lean-forward="false" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -25,8 +25,8 @@
       <file leaf-file-name="contact.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/contact.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="297" column="15" lean-forward="false" selection-start-line="297" selection-start-column="4" selection-end-line="297" selection-end-column="15" />
+            <state relative-caret-position="772">
+              <caret line="316" column="7" lean-forward="true" selection-start-line="300" selection-start-column="4" selection-end-line="316" selection-end-column="7" />
               <folding>
                 <element signature="e#0#44#0" expanded="false" />
               </folding>
@@ -47,8 +47,18 @@
       <file leaf-file-name="envoi_msg.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/envoi_msg.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="178" column="5" lean-forward="false" selection-start-line="178" selection-start-column="5" selection-end-line="178" selection-end-column="5" />
+            <state relative-caret-position="546">
+              <caret line="179" column="10" lean-forward="false" selection-start-line="179" selection-start-column="10" selection-end-line="179" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NumberFromNom.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/execute/NumberFromNom.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -89,26 +99,18 @@
       <file leaf-file-name="Contact.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_class/Contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="794">
-              <caret line="100" column="10" lean-forward="true" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+            <state relative-caret-position="584">
+              <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding>
-                <marker date="1503663499007" expanded="true" signature="1195:1269" ph="INSERT INTO contact... " />
-                <marker date="1503663499007" expanded="true" signature="1691:1763" ph="UPDATE conta... " />
-                <marker date="1503663499007" expanded="true" signature="1697:1734" ph="INSERT INTO contact... " />
-                <marker date="1503663499007" expanded="true" signature="2137:2185" ph="DELETE FROM " />
-                <marker date="1503663499007" expanded="true" signature="2148:2185" ph="UPDATE conta... " />
-                <marker date="1503663499007" expanded="true" signature="2331:2386" ph="DELETE FROM " />
+                <marker date="1503667114978" expanded="true" signature="1195:1269" ph="INSERT INTO contact... " />
+                <marker date="1503667114978" expanded="true" signature="1691:1763" ph="UPDATE conta... " />
+                <marker date="1503667114978" expanded="true" signature="1697:1734" ph="INSERT INTO contact... " />
+                <marker date="1503667114978" expanded="true" signature="2137:2185" ph="DELETE FROM " />
+                <marker date="1503667114978" expanded="true" signature="2148:2185" ph="UPDATE conta... " />
+                <marker date="1503667114978" expanded="true" signature="2331:2386" ph="DELETE FROM " />
+                <marker date="1503667114978" expanded="true" signature="2652:2694" ph="SELECT * FRO... contact" />
+                <marker date="1503667114978" expanded="true" signature="2674:2688" ph="UPDATE conta... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modele_envoi.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard/modele/modele_envoi.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -165,6 +167,7 @@
       <find>getconta</find>
       <find>getcont</find>
       <find>voir_groupe</find>
+      <find>texte_a_afficher</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,7 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dashbord/modele/modele_envoi.php" />
         <option value="$PROJECT_DIR$/dashbord/Inc/sidebar.php" />
         <option value="$PROJECT_DIR$/dashbord/Inc/reduire.php" />
         <option value="$PROJECT_DIR$/dashbord/Inc/navbar.php" />
@@ -218,11 +220,12 @@
         <option value="$PROJECT_DIR$/dashboard/Inc/details_contact.php" />
         <option value="$PROJECT_DIR$/js/contact.js" />
         <option value="$PROJECT_DIR$/dashboard/modele/modele_envoi.php" />
-        <option value="$PROJECT_DIR$/_class/Contact.php" />
         <option value="$PROJECT_DIR$/_class/Groupe.php" />
         <option value="$PROJECT_DIR$/execute/gerer_contact_groupe.php" />
         <option value="$PROJECT_DIR$/execute/recherche_contact.php" />
         <option value="$PROJECT_DIR$/dashboard/envoi.php" />
+        <option value="$PROJECT_DIR$/execute/NumberFromNom.php" />
+        <option value="$PROJECT_DIR$/_class/Contact.php" />
         <option value="$PROJECT_DIR$/js/envoi_msg.js" />
       </list>
     </option>
@@ -479,12 +482,12 @@
       <updated>1502792861244</updated>
       <workItem from="1502792862547" duration="17492000" />
       <workItem from="1503059235336" duration="104357000" />
-      <workItem from="1503517580111" duration="31594000" />
+      <workItem from="1503517580111" duration="35743000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153443000" />
+    <option name="totallyTimeSpent" value="157592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1331" extended-state="6" />
@@ -520,16 +523,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/execute/register_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="426">
@@ -894,21 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_class/Contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="100" column="10" lean-forward="true" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
-          <folding>
-            <marker date="1503663499007" expanded="true" signature="1195:1269" ph="INSERT INTO contact... " />
-            <marker date="1503663499007" expanded="true" signature="1691:1763" ph="UPDATE conta... " />
-            <marker date="1503663499007" expanded="true" signature="1697:1734" ph="INSERT INTO contact... " />
-            <marker date="1503663499007" expanded="true" signature="2137:2185" ph="DELETE FROM " />
-            <marker date="1503663499007" expanded="true" signature="2148:2185" ph="UPDATE conta... " />
-            <marker date="1503663499007" expanded="true" signature="2331:2386" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_class/Groupe.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -930,16 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/contact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="297" column="15" lean-forward="false" selection-start-line="297" selection-start-column="4" selection-end-line="297" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/execute/gerer_contact_groupe.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -958,18 +926,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="316" column="7" lean-forward="true" selection-start-line="300" selection-start-column="4" selection-end-line="316" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/execute/NumberFromNom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_class/Contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding>
+            <marker date="1503667114978" expanded="true" signature="1195:1269" ph="INSERT INTO contact... " />
+            <marker date="1503667114978" expanded="true" signature="1691:1763" ph="UPDATE conta... " />
+            <marker date="1503667114978" expanded="true" signature="1697:1734" ph="INSERT INTO contact... " />
+            <marker date="1503667114978" expanded="true" signature="2137:2185" ph="DELETE FROM " />
+            <marker date="1503667114978" expanded="true" signature="2148:2185" ph="UPDATE conta... " />
+            <marker date="1503667114978" expanded="true" signature="2331:2386" ph="DELETE FROM " />
+            <marker date="1503667114978" expanded="true" signature="2652:2694" ph="SELECT * FRO... contact" />
+            <marker date="1503667114978" expanded="true" signature="2674:2688" ph="UPDATE conta... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/envoi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="79" column="105" lean-forward="false" selection-start-line="79" selection-start-column="88" selection-end-line="79" selection-end-column="105" />
+        <state relative-caret-position="342">
+          <caret line="71" column="85" lean-forward="false" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/envoi_msg.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="178" column="5" lean-forward="false" selection-start-line="178" selection-start-column="5" selection-end-line="178" selection-end-column="5" />
+        <state relative-caret-position="546">
+          <caret line="179" column="10" lean-forward="false" selection-start-line="179" selection-start-column="10" selection-end-line="179" selection-end-column="10" />
           <folding />
         </state>
       </provider>

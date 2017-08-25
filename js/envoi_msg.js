@@ -4,6 +4,7 @@
 var nombre_caractere_un_msg=160;
 var nombre_message=1;
 var tableau_numeros=[];
+var identification_unique=1;
 updateNumbermsg();
 
 
@@ -108,7 +109,7 @@ $('#contacts').keyup(function(e){
         setNumeroEnvoi();
 
     }
-    $('title').html('Keyup');
+
 });
 
 
@@ -117,7 +118,7 @@ $('#contacts').change(function(){
 });
 
 $('.ajouter_numero').click(function(){
-    $('option[value=\'Melaine Boue\']').remove();
+   alert( $('.liste_contacts_vue').html());
 });
 
 
@@ -169,15 +170,55 @@ function ajouterNumeroDestinataire(numero)
 function setNumeroEnvoi()
 {
     var nom=$('#contacts').val().trim();
-    $('#contacts').val('');
 
-    //alert('/'+nom+'/');
-    $('.texte_a_afficher').html(nom);
-    $('.liste_contacts_vue').html(  $('.liste_contacts_vue').html()+$('.bouton_cacher_utilise').html());
-    $('.liste_contacts_vue button').removeClass('texte_a_afficher');
-    ajouterNumeroDestinataire(nom);
-   // $('.liste_des_contact option[value=\''+nom+'\']').remove();
+    if(nom!='')
+    {
+        $('#contacts').val('');
+        $('.texte_a_afficher').html(nom);
+        $('.texte_a_afficher').addClass('nouveau'+identification_unique);
+        $('.liste_contacts_vue').html(  $('.liste_contacts_vue').html()+$('.bouton_cacher_utilise').html());
+        //$('.liste_contacts_vue button').addClass('nouveau'+identification_unique);
+        $('.liste_contacts_vue button').removeClass('texte_a_afficher');
+        ajouterNumeroDestinataire(nom);
+        var nombre=identification_unique;
+        //$('.liste_des_contact option[value=\''+nom+'\']').remove();
+        //alert($('.liste_contacts_vue').html( ));
+
+        var url="../execute/NumberFromNom.php?numero="+nom;
+        //alert(url);
+        $.ajax({
+            url : url,
+            type : 'GET',
+            dataType : 'html',
+            success : function(code_html, statut){
+                //Format de retour : Total des contact##nom du groupe##données
+                //alert(code_html);
+                $('.nouveau'+nombre).html(code_html.trim());
+            },
+            error : function(resultat, statut, erreur){
+                alert(resultat.responseText);
+            }
+        });
+
+        identification_unique++;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    // $('.liste_des_contact option[value=\''+nom+'\']').remove();
 
 }
+
+
+
+
 
 

@@ -110,6 +110,28 @@ class Contact
 
 
 
+    public static function getContactFromNumberOrName($texte)
+    {
+        $connexion=DAO::getConnection();
+        $requete=$connexion->prepare("(SELECT * FROM contact WHERE numero=:numero) UNION(SELECT * FROM contact WHERE nom=:nom)");
+        $requete->bindValue(":numero",$texte,PDO::PARAM_STR);
+        $requete->bindValue(":nom",$texte,PDO::PARAM_STR);
+        $requete->execute();
+
+        if($reponse=$requete->fetch())
+        {
+            $contact=new Contact($reponse['nom'],$reponse['numero'],$reponse['id_user']);
+        }
+        else
+        {
+            $contact=new Contact($texte,$texte,0);
+        }
+        return $contact;
+
+    }
+
+
+
 
 
 

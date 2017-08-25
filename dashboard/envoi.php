@@ -65,14 +65,34 @@ include_once 'Inc/navbar.php';
                                             <div class="control-group">
                                                 <label class="control-label" for="date01">No Destinataire(s)</label>
                                                 <div class="controls">
-                                                    <input type="text" name="recipient" class="span6 recipient"  placeholder=""  >
-                                                    <input type="button" value="Ajouter numero" title="Ajouter à partir des contacts" />
+                                                    <input type="text" id="contacts" list="liste_contact" name="recipient" class="span6 recipient"  placeholder=""  >
                                                     <input type="button" value="Ajouter un contact" title="Ajouter à partir des contacts" />
+                                                    <input type="button" class="hidden" value="Ajouter numero" title="Ajouter à partir des contacts" />
+
+                                                    <div class="bouton_cacher_utilise hidden">
+                                                        <button type="button" class="btn btn-primary texte_a_afficher" data-toggle="button">Single toggle</button>
+                                                    </div>
+
+                                                    <div class="liste_contacts_vue">
+                                                        <!--LES NUMERO SONT VUE ICI -->
+                                                    </div>
+
+                                                    <datalist id="liste_contact" class="liste_des_contact">
+                                                        <?php
+                                                        foreach ($liste_contact as $contact)
+                                                        {
+                                                            ?>
+                                                            <option value="<?php echo $contact['nom'] ?>"> <?php echo $contact['nom'] ?> : <?php echo $contact['numero'] ?></option>
+                                                            <?php
+                                                        }
+                                                        ?>
+                                                    </datalist>
 
                                                     <!--<textarea name="recipient"  class="input-xlarge textarea form-control recipient" id="date01" style="width: 85%; height: 70px" placeholder="Ex : 22507001122,22505667788,22541223355,..."></textarea>-->
         <!--                                            <p class="help-block">In addition to freeform text, any HTML5 text-based input appears like so.</p>-->
                                                 </div>
                                             </div>
+
                                             <div class="control-group">
                                                 <label class="control-label" for="textarea2">Message</label>
                                                 <div class="controls">

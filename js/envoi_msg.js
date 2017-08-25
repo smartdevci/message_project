@@ -3,7 +3,9 @@
  */
 var nombre_caractere_un_msg=160;
 var nombre_message=1;
+var tableau_numeros=[];
 updateNumbermsg();
+
 
 
 $('.message_sms').keyup(function(){
@@ -97,3 +99,81 @@ $('.bouton_envoyer_message').click(function(){
 
 });
 /***********************************************************************************************************************/
+
+
+$('#contacts').keyup(function(e){
+
+    if(e.keyCode==13)
+    {
+        setNumeroEnvoi();
+
+    }
+    $('title').html('Keyup');
+});
+
+
+$('#contacts').change(function(){
+    $('title').html('change');
+});
+
+$('#contacts').click(function(){
+    $('title').html('click');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************************************************************/
+/******************************************************FONCTIONS********************************************************/
+/***********************************************************************************************************************/
+
+function ajouterNumeroDestinataire(numero)
+{
+    tableau_numeros.push(numero);
+}
+
+
+
+function setNumeroEnvoi()
+{
+    var nom=$('#contacts').val().trim();
+    $('#contacts').val('');
+    $('.texte_a_afficher').html(nom);
+    $('.liste_contacts_vue').html(  $('.liste_contacts_vue').html()+$('.bouton_cacher_utilise').html());
+    $('.liste_contacts_vue button').removeClass('texte_a_afficher');
+    ajouterNumeroDestinataire(nom);
+}
+
+

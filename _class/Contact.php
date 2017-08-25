@@ -100,6 +100,12 @@ class Contact
         $requete=$connexion->prepare("DELETE FROM contact WHERE id_contact=:id_contact");
         $requete->bindValue(":id_contact",$this->getId(),PDO::PARAM_INT);
         $requete->execute();
+
+        $requete=$connexion->prepare("DELETE FROM contact_groupe WHERE id_contact=:id_contact");
+        $requete->bindValue(":id_contact",$this->getId(),PDO::PARAM_INT);
+        $requete->execute();
+
+
     }
 
 

@@ -17,6 +17,7 @@ require_once '../dashboard/modele/modele_gerer_contact_groupe.php';
     <thead>
     <tr>
         <th></th>
+        <th></th>
         <th>#</th>
         <th>Nom</th>
         <th>Numero</th>
@@ -30,6 +31,7 @@ require_once '../dashboard/modele/modele_gerer_contact_groupe.php';
     {
         ?>
         <tr class="ligne_contact<?php echo $contact['id_contact'] ?>">
+            <td></td>
             <td></td>
             <td>
                 <input type="checkbox" <?php echo (in_array($contact['id_contact'],$liste_contact_id_groupe)?"checked":"") ?>

@@ -90,6 +90,13 @@ class Groupe
         $requete=$connexion->prepare("DELETE FROM groupe WHERE id_groupe=:id_groupe");
         $requete->bindValue(":id_groupe",$this->getId(),PDO::PARAM_INT);
         $requete->execute();
+
+        $connexion=DAO::getConnection();
+        $requete=$connexion->prepare("DELETE FROM contact_groupe WHERE id_groupe=:id_groupe");
+        $requete->bindValue(":id_groupe",$this->getId(),PDO::PARAM_INT);
+        $requete->execute();
+
+
     }
 
 

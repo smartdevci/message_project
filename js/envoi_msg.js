@@ -113,11 +113,11 @@ $('#contacts').keyup(function(e){
 
 
 $('#contacts').change(function(){
-    $('title').html('change');
+
 });
 
-$('#contacts').click(function(){
-    $('title').html('click');
+$('.ajouter_numero').click(function(){
+    $('option[value=\'Melaine Boue\']').remove();
 });
 
 
@@ -170,10 +170,14 @@ function setNumeroEnvoi()
 {
     var nom=$('#contacts').val().trim();
     $('#contacts').val('');
+
+    //alert('/'+nom+'/');
     $('.texte_a_afficher').html(nom);
     $('.liste_contacts_vue').html(  $('.liste_contacts_vue').html()+$('.bouton_cacher_utilise').html());
     $('.liste_contacts_vue button').removeClass('texte_a_afficher');
     ajouterNumeroDestinataire(nom);
+   // $('.liste_des_contact option[value=\''+nom+'\']').remove();
+
 }
 
 

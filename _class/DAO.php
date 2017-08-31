@@ -127,6 +127,50 @@ class DAO
     }
 
 
+    public static function getNumber($texte)
+    {
+
+        $connexion=DAO::getConnection();
+        $requete=$connexion->prepare("
+            SELECT * FROM contact WHERE numero=:numero
+        ");
+
+        $requete->bindValue(':numero',$texte,PDO::PARAM_STR);
+        $requete->execute();
+
+
+        if($requete->rowCount()!=0)
+        {
+            $reponse=$requete->fetch();
+            echo $reponse['numero'];
+
+        }
+        else
+        {
+            $requete2=$connexion->prepare("
+               SELECT * FROM contact WHERE nom=:nom
+            ");
+
+            $requete2->bindValue(':nom',$texte,PDO::PARAM_STR);
+            $requete2->execute();
+
+            if($requete2->rowCount()!=0)
+            {
+                $reponse2=$requete2->fetch();
+                echo $reponse2['numero'];
+
+            }
+            else
+            {
+                echo $texte;
+            }
+
+        }
+
+
+    }
+
+
 
 
 

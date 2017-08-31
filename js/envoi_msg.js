@@ -7,6 +7,8 @@ var tableau_numeros=[];
 var identification_unique=1;
 updateNumbermsg();
 
+var nom_expediteur=$('.sender').val();
+
 
 
 $('.message_sms').keyup(function(){
@@ -46,7 +48,7 @@ $('.message_envoye').removeClass('hidden');
 $('.bouton_envoyer_message').click(function(){
 
     hideAll();
-    if( parseInt($('.m').val().trim())>=parseInt(nombre_message))
+  /*  if( parseInt($('.m').val().trim())>=parseInt(nombre_message))
     {
 
         var url='authsms.php?sender='+$('.sender').val()+'&recipient='+$('.recipient').val()+'&message='+$('.message_sms').val()+"&nb="+nombre_message;
@@ -96,9 +98,77 @@ $('.bouton_envoyer_message').click(function(){
         $('.nombre_message_insuffisant').show(500);
     }
 
+*/
+    //envoyerMultiple();
+    envoyerMessage(nom_expediteur,"Melaine Boue","ok");
+
 
 
 });
+/***********************************************************************************************************************/
+
+
+function envoyerMultiple()
+{
+    for( var i=0;i<tableau_numeros.length;i++)
+    {
+        alert(tableau_numeros[i]);
+
+        //tableau_numeros.splice(0,1);
+
+    }
+    //alert('ok '+tableau_numeros.length);
+}
+
+
+/***********************************************************************************************************************/
+function envoyerMessage(expediteur,destinataire,message)
+{
+    var url='envoiMultiple.php?sender='+expediteur+'&recipient='+destinataire+'&message='+message+"&nb="+(parseInt(nombre_message/160)+1);
+    alert(url);
+    $.ajax({
+        url : url,
+        type : 'GET',
+        dataType : 'html',
+        success: function(reponse, statut){
+
+            if(reponse=='non')
+            {
+
+            }
+            else
+            {
+                 $.ajax({
+                    url : reponse,
+                    type : 'GET',
+                    dataType : 'html',
+                    success: function(retour, statut2){},
+                    error: function(resultat, statut){}
+                });
+            }
+        },
+        error: function(resultat, statut){}
+    });
+}
+/***********************************************************************************************************************/
+
+function getNumber(texte)
+{
+
+    var url='../execute/get_number.php?texte='+texte;
+    //alert(url);
+    $.ajax({
+                    url : reponse,
+                    type : 'GET',
+                    dataType : 'html',
+                    success: function(retour, statut2){
+                        return retour;
+                    },
+                    error: function(resultat, statut){}
+                });
+}
+
+
 /***********************************************************************************************************************/
 
 
@@ -118,7 +188,8 @@ $('#contacts').change(function(){
 });
 
 $('.ajouter_numero').click(function(){
-   alert( $('.liste_contacts_vue').html());
+   alert( tableau_numeros.length);
+
 });
 
 

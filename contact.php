@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 $_SESSION['contact'] = 'contact.php';
 ?>
 
@@ -50,6 +50,3 @@ $_SESSION['contact'] = 'contact.php';
 </body>
 </html>
 
-<?php
-session_destroy();
-?>

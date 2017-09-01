@@ -14,3 +14,7 @@ $user=DAO::getUser($id);
 //var_dump($user);
 $liste_contact=$user->getContact();
 $expeditor_name=$user->name_messenger;
+
+
+$liste_groupe=$user->getGroup();
+

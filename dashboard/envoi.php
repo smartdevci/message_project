@@ -4,6 +4,9 @@ header("Content-Type: text/html; charset=UTF-8");
 
 $_SESSION['page'] = "envoi";
 require_once 'modele/modele_envoi.php';
+$tableau_contact=$liste_contact;
+
+
 ?>
 
 
@@ -38,6 +41,10 @@ include_once 'Inc/navbar.php';
             // REDUIRE / AGRANDIR
             include_once 'Inc/reduire.php';
             ?>
+            <div class="hidden">
+                <?php  var_dump($tableau_contact);?>
+            </div>
+
 
             <div class="row-fluid">
                 <!-- block -->
@@ -59,6 +66,44 @@ include_once 'Inc/navbar.php';
                                                 <label class="control-label" for="typeahead">Nom Expéditeur </label>
                                                 <div class="controls">
                                                     <input type="text" name="sender" class="span6 sender" value="<?php echo $expeditor_name ?>"  readonly id="typeahead" placeholder="Nom de l'expéditeur"  data-provide="typeahead" data-items="4" style="height: 40px">
+
+
+                                                    <!------------------------------------------------------------------------------------------>
+                                                    <span data-toggle="modal" data-target="#ajouter_contact" class="voir_groupe ajouter_contact_envoi_msg icon-user" style="cursor: pointer" title="Gerer les contacts du groupe Famille" data-id="1"></span>
+
+
+
+
+                                                    <div class="row modal fade" role="dialog" id="ajouter_contact">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                    <h4 class="modal-title"> Selectionner les contacts</h4>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <center class="row">
+                                                                                <p class="contenu_gestion_groupe">
+
+                                                                                </p>
+                                                                            </center>
+
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default actualiser_page" data-dismiss="modal">Fermer</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!------------------------------------------------------------------------------------------>
+
+
+
                                                 </div>
                                             </div>
 
@@ -219,7 +264,7 @@ include_once 'Inc/navbar.php';
                                     </div>
                                     
                                 </fieldset>
-                            </form>
+                          </form><
 
                         </div>
                     </div>

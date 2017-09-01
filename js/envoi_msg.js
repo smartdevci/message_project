@@ -129,7 +129,7 @@ function envoyerMultiple(expediteur,groupe_numero_nom_destinataire,message)
     if( parseInt($('.m').val().trim())>=parseInt(nombre_message))
     {
         var url='authsms.php?sender='+expediteur+'&message='+message+"&nb="+nombre_message+'&recipient='+groupe_numero_nom_destinataire;
-        alert(url);
+        //alert(url);
         $.ajax({
             url : url,
             type : 'GET',
@@ -142,9 +142,9 @@ function envoyerMultiple(expediteur,groupe_numero_nom_destinataire,message)
                 }
                 else
                 {
-                    alert(reponse);
+                    //alert(reponse);
                     var reponses=reponse.split("///");
-                    alert(reponses.length);
+                    //alert(reponses.length);
                     /*$('.message_envoye').hide();
                     $('.message_envoye').show(500);
 
@@ -155,13 +155,17 @@ function envoyerMultiple(expediteur,groupe_numero_nom_destinataire,message)
                     //alert(reponse);
                     for(var j=0;j<reponses.length;j++)
                     {
-                        $.ajax({
-                            url : reponses[j],
-                            type : 'GET',
-                            dataType : 'html',
-                            success: function(retour, statut2){},
-                            error: function(resultat, statut){}
-                        });
+                        if(reponses[j].trim()!="")
+                        {
+                            $.ajax({
+                                url : reponses[j],
+                                type : 'GET',
+                                dataType : 'html',
+                                success: function(retour, statut2){},
+                                error: function(resultat, statut){}
+                            });
+                            //alert('dedan');
+                        }
                     }
 
                 }
@@ -266,7 +270,59 @@ $('.ajouter_numero').click(function(){
 });
 
 
+/***********************************************************************************************************************/
+$('.ajouter_contact_envoi_msg').click(function(){
 
+    var url="../execute/ajouter_contact_groupe_envoi_sms.php?id_groupe="+$(this).attr('data-id');
+    //alert(url);
+    $.ajax({
+        url : url,
+        type : 'GET',
+        dataType : 'html',
+        success : function(code_html, statut){
+            //Format de retour : Total des contact##nom du groupe##données
+            $('.contenu_gestion_groupe').html(code_html);
+            addEvent();
+            //gestion_contact_data();
+        },
+        error : function(resultat, statut, erreur){
+            alert(resultat.responseText);
+        }
+
+
+    });
+});
+
+
+
+
+
+function addEvent() {
+
+
+    $('.selectionner_tout_contact').click(function () {
+        $('.boutonCocher').prop('checked',$('.selectionner_tout_contact').prop('checked') );
+
+        if($('.status_contact').html()=='Selectionner')
+        {
+            $('.status_contact').html('Deselectionner');
+
+
+        }
+        else if($('.status_contact').html()=='Deselectionner')
+        {
+            $('.status_contact').html('Selectionner');
+        }
+
+
+        $('input:checked').each(function() {
+            alert('ok');
+        });
+
+
+    });
+
+}
 
 
 

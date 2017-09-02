@@ -27,14 +27,14 @@ require_once '../dashboard/modele/modele_gerer_contact_groupe.php';
     <tbody>
     <?php
     $i=1;
-    foreach ($liste_contact as $contact)
+    foreach($liste_contact as $contact)
     {
         ?>
         <tr class="ligne_contact<?php echo $contact['id_contact'] ?>">
             <td></td>
             <td></td>
             <td>
-                <input type="checkbox" data-id_contact="<?php echo $contact['id_contact'] ?>" class="boutonCocher"/>
+                <input type="checkbox" data-contact="<?php echo $contact['nom'] ?>" class="boutonCocher" />
             </td>
             <td class="nom"><?php echo htmlspecialchars($contact['nom']) ?></td>
             <td class="numero"> <?php echo htmlspecialchars($contact['numero']) ?></td>

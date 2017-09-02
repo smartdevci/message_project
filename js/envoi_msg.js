@@ -51,6 +51,7 @@ $('.bouton_envoyer_message').click(function(){
 
     hideAll();
 
+
   /*  if( parseInt($('.m').val().trim())>=parseInt(nombre_message))
     {
 
@@ -106,7 +107,7 @@ $('.bouton_envoyer_message').click(function(){
     //alert(numeroGroupe);
     grouperNumeros();
     var message=$('.message_sms').val();
-   // alert(numeroGroupe+"/"+tableau_numeros.length);
+    alert(numeroGroupe+"/"+tableau_numeros.length);
     envoyerMultiple(nom_expediteur,numeroGroupe,message);
 
 });
@@ -301,11 +302,34 @@ function addEvent() {
 
 
     $('.selectionner_tout_contact').click(function () {
-        $('.boutonCocher').prop('checked',$('.selectionner_tout_contact').prop('checked') );
 
-        if($('.status_contact').html()=='Selectionner')
+        if($(this).prop('checked')==true)
         {
+            $('.boutonCocher').prop('checked',$('.selectionner_tout_contact').prop('checked') );
             $('.status_contact').html('Deselectionner');
+
+            $('input:checked').each(function() {
+
+                $('.texte_a_afficher').html( $(this).attr('data-contact') );
+                $('.texte_a_afficher').addClass('nouveau'+identification_unique);
+                $('.liste_contacts_vue').html(  $('.liste_contacts_vue').html()+$('.bouton_cacher_utilise').html());
+                //$('.liste_contacts_vue button').addClass('nouveau'+identification_unique);
+                $('.liste_contacts_vue button').removeClass('texte_a_afficher');
+                ajouterNumeroDestinataire($(this).attr('data-contact'));
+            });
+        }
+        else
+        {
+            $('.boutonCocher').prop('checked',$('.selectionner_tout_contact').prop('checked') );
+            $('.status_contact').html('Deselectionner');
+
+        }
+
+
+
+        /*if($('.status_contact').html()=='Selectionner')
+        {
+
 
 
         }
@@ -315,12 +339,18 @@ function addEvent() {
         }
 
 
-        $('input:checked').each(function() {
-            alert('ok');
-        });
+
+
+
+
+        $('input:c')*/
 
 
     });
+
+
+
+
 
 }
 

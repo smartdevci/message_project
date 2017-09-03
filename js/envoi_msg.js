@@ -3,13 +3,15 @@
  */
 var nombre_caractere_un_msg=160;
 var nombre_message=1;
+var nombre_message_tout=1;
 var tableau_numeros=[];
 var identification_unique=1;
 var numeroGroupe="";
 var numberSeparator="///";
 updateNumbermsg();
 
-var nom_expediteur=$('.sender').val();
+var nom_expediteur=$
+('.sender').val();
 
 
 
@@ -37,6 +39,7 @@ function hideAll()
 function updateNumbermsg() {
     nombre_caractere=$('.message_sms').val().length;
     nombre_message=parseInt(nombre_caractere/nombre_caractere_un_msg)+1;
+    nombre_message=nombre_message*tableau_numeros.length;
     $('.nombre_caractere').html(nombre_caractere);
     $('.nombre_message').html(nombre_message);
 }
@@ -105,9 +108,9 @@ $('.bouton_envoyer_message').click(function(){
 */
     //envoyerMultiple();
     //alert(numeroGroupe);
+
     grouperNumeros();
     var message=$('.message_sms').val();
-    alert(numeroGroupe+"/"+tableau_numeros.length);
     envoyerMultiple(nom_expediteur,numeroGroupe,message);
 
 });
@@ -126,11 +129,15 @@ function grouperNumeros()
 
 function envoyerMultiple(expediteur,groupe_numero_nom_destinataire,message)
 {
+    nombre_caractere=$('.message_sms').val().length;
+    nombre_message=parseInt(nombre_caractere/nombre_caractere_un_msg)+1;
+    nombre_message=nombre_message*tableau_numeros.length;
+
 
     if( parseInt($('.m').val().trim())>=parseInt(nombre_message))
     {
         var url='authsms.php?sender='+expediteur+'&message='+message+"&nb="+nombre_message+'&recipient='+groupe_numero_nom_destinataire;
-        //alert(url);
+        alert(url);
         $.ajax({
             url : url,
             type : 'GET',
@@ -138,9 +145,7 @@ function envoyerMultiple(expediteur,groupe_numero_nom_destinataire,message)
             success: function(reponse, statut){
 
                 if(reponse=='non')
-                {
-
-                }
+                {}
                 else
                 {
                     //alert(reponse);
@@ -200,7 +205,8 @@ function envoyerMultiple(expediteur,groupe_numero_nom_destinataire,message)
 
 
 /***********************************************************************************************************************/
-function envoyerMessage(expediteur,destinataire,message)
+//test
+/*function envoyerMessage(expediteur,destinataire,message)
 {
     var url='envoiMultiple.php?sender='+expediteur+'&recipient='+destinataire+'&message='+message+"&nb="+(parseInt(nombre_message/160)+1);
     alert(url);
@@ -227,9 +233,11 @@ function envoyerMessage(expediteur,destinataire,message)
         },
         error: function(resultat, statut){}
     });
-}
+}*/
 /***********************************************************************************************************************/
 
+//test
+/*
 function getNumber(texte)
 {
 
@@ -245,7 +253,7 @@ function getNumber(texte)
                     error: function(resultat, statut){}
                 });
 }
-
+*/
 
 /***********************************************************************************************************************/
 
@@ -255,20 +263,9 @@ $('#contacts').keyup(function(e){
     if(e.keyCode==13)
     {
         setNumeroEnvoi();
-
     }
-
 });
 
-
-$('#contacts').change(function(){
-
-});
-
-$('.ajouter_numero').click(function(){
-   alert( tableau_numeros.length);
-
-});
 
 
 /***********************************************************************************************************************/
@@ -298,6 +295,11 @@ $('.ajouter_contact_envoi_msg').click(function(){
 
 
 
+
+
+
+
+
 function addEvent() {
 
 
@@ -308,45 +310,48 @@ function addEvent() {
             $('.boutonCocher').prop('checked',$('.selectionner_tout_contact').prop('checked') );
             $('.status_contact').html('Deselectionner');
 
-            $('input:checked').each(function() {
+            alert( $('.liste_contacts_vue').html());
 
-                $('.texte_a_afficher').html( $(this).attr('data-contact') );
+            $('.boutonCocher').each(function() {
+                alert('ici '+$('.texte_a_afficher').html()+"/"+$('.bouton_cacher_utilise').html());
+                 $('.texte_a_afficher').html( $(this).attr('data-contact') );
+
+                // alert($('.bouton_cacher_utilise').html()+".............."+$(this).attr('data-contact'));
                 $('.texte_a_afficher').addClass('nouveau'+identification_unique);
                 $('.liste_contacts_vue').html(  $('.liste_contacts_vue').html()+$('.bouton_cacher_utilise').html());
-                //$('.liste_contacts_vue button').addClass('nouveau'+identification_unique);
+                $('.liste_contacts_vue button').addClass('nouveau'+identification_unique);
+                $('.liste_contacts_vue button').addClass('nouveau'+identification_unique);
+                $('.nouveau'+identification_unique).attr('data-nom', $(this).attr('data-contact') );
+
                 $('.liste_contacts_vue button').removeClass('texte_a_afficher');
                 ajouterNumeroDestinataire($(this).attr('data-contact'));
+
             });
+            alert( $('.liste_contacts_vue').html());
+
         }
         else
         {
+            //quand on decoche tout
             $('.boutonCocher').prop('checked',$('.selectionner_tout_contact').prop('checked') );
             $('.status_contact').html('Deselectionner');
 
+            $('.boutonCocher').each(function() {
+                $('.les_contacts[data-nom="'+$(this).attr('data-contact')+'"]').remove();
+                supprimerNumeroDestinataire($(this).attr('data-contact'));
+            });
         }
 
-
-
-        /*if($('.status_contact').html()=='Selectionner')
-        {
-
-
-
-        }
-        else if($('.status_contact').html()=='Deselectionner')
-        {
-            $('.status_contact').html('Selectionner');
-        }
-
-
-
-
-
-
-        $('input:c')*/
-
+        //alert('ok ' +numeroGroupe);
 
     });
+
+
+
+
+    /*$('.nouveau1').click(function () {
+        alert('ok');
+    });*/
 
 
 
@@ -393,6 +398,11 @@ function addEvent() {
 function ajouterNumeroDestinataire(numero)
 {
     tableau_numeros.push(numero);
+}
+
+function supprimerNumeroDestinataire(numero)
+{
+    tableau_numeros.splice( tableau_numeros.indexOf(numero),1);
 }
 
 

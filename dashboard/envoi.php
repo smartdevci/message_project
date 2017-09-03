@@ -69,7 +69,6 @@ include_once 'Inc/navbar.php';
 
 
                                                     <!------------------------------------------------------------------------------------------>
-                                                    <span data-toggle="modal" data-target="#ajouter_contact" class="voir_groupe ajouter_contact_envoi_msg icon-user" style="cursor: pointer" title="Gerer les contacts du groupe Famille" data-id="1"></span>
 
 
 
@@ -111,11 +110,13 @@ include_once 'Inc/navbar.php';
                                                 <label class="control-label" for="date01">No Destinataire(s)</label>
                                                 <div class="controls">
                                                     <input type="text" id="contacts" list="liste_contact" name="recipient" class="span6 recipient"  placeholder="Saisir le nom ou numero et appuyer sur Entrer"  >
+                                                    <span data-toggle="modal" data-target="#ajouter_contact" class="voir_groupe ajouter_contact_envoi_msg icon-user" style="cursor: pointer" title="Gerer les contacts du groupe Famille" data-id="1"></span>
+
                                                     <!-- <input type="button" class="ajouter_numero" value="Ajouter un contact" title="Ajouter à partir des contacts" />
                                                     <input type="button" class="hidden" value="Ajouter numero" title="Ajouter à partir des contacts" />-->
 
                                                     <div class="bouton_cacher_utilise hidden">
-                                                        <button type="button" class="btn btn-primary texte_a_afficher" data-toggle="button">Single toggle</button>
+                                                        <button type="button" class="btn btn-primary texte_a_afficher les_contacts" data-nom="" data-toggle="button">Single toggle..</button>
                                                     </div>
 
                                                     <div class="liste_contacts_vue">

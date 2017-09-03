@@ -10,6 +10,8 @@ var numeroGroupe="";
 var numberSeparator="///";
 updateNumbermsg();
 
+code_bouton='<button type="button" class="btn btn-primary texte_a_afficher les_contacts" data-nom=""  data-numero="" data-toggle="button">Single toggle..</button>';
+
 var nom_expediteur=$
 ('.sender').val();
 
@@ -39,9 +41,11 @@ function hideAll()
 function updateNumbermsg() {
     nombre_caractere=$('.message_sms').val().length;
     nombre_message=parseInt(nombre_caractere/nombre_caractere_un_msg)+1;
-    nombre_message=nombre_message*tableau_numeros.length;
+    nombre_message_tout=nombre_message*tableau_numeros.length;
     $('.nombre_caractere').html(nombre_caractere);
     $('.nombre_message').html(nombre_message);
+
+    //alert(nombre_message_tout);
 }
 
 
@@ -53,65 +57,27 @@ $('.message_envoye').removeClass('hidden');
 $('.bouton_envoyer_message').click(function(){
 
     hideAll();
+    //envoyerMultiple();
+    //alert(numeroGroupe);
 
+    if( parseInt($('.m').val().trim())>=parseInt(nombre_message)) {
 
-  /*  if( parseInt($('.m').val().trim())>=parseInt(nombre_message))
-    {
+        grouperNumeros();
+        var message = $('.message_sms').val();
+        envoyerMultiple(nom_expediteur, numeroGroupe, message);
 
-        var url='authsms.php?sender='+$('.sender').val()+'&recipient='+$('.recipient').val()+'&message='+$('.message_sms').val()+"&nb="+nombre_message;
-       //alert(url);
-        $.ajax({
-            url : url,
-            type : 'GET',
-            dataType : 'html',
-            success: function(reponse, statut){
+        $('.message_envoye').hide();
+        $('.message_envoye').show(500);
 
-                if(reponse=='non')
-                {
-
-                }
-                else
-                {
-                    //alert(reponse);
-                    $('.message_envoye').hide();
-                    $('.message_envoye').show(500);
-
-                    //$('.sender').val('');
-                    $('.recipient').val('');
-                    $('.message').val('');
-
-                    //alert(reponse);
-                    $.ajax({
-                        url : reponse,
-                        type : 'GET',
-                        dataType : 'html',
-                        success: function(retour, statut2){},
-                        error: function(resultat, statut){}
-                    });
-                }
-
-
-            },
-            error: function(resultat, statut){
-
-            }
-
-
-        });
-
+        //$('.sender').val('');
+        $('.recipient').val('');
+        $('.liste_contacts_vue').html('');
+        $('.message_sms').val('');
     }
     else
     {
         $('.nombre_message_insuffisant').show(500);
     }
-
-*/
-    //envoyerMultiple();
-    //alert(numeroGroupe);
-
-    grouperNumeros();
-    var message=$('.message_sms').val();
-    envoyerMultiple(nom_expediteur,numeroGroupe,message);
 
 });
 
@@ -134,7 +100,7 @@ function envoyerMultiple(expediteur,groupe_numero_nom_destinataire,message)
     nombre_message=nombre_message*tableau_numeros.length;
 
 
-    if( parseInt($('.m').val().trim())>=parseInt(nombre_message))
+    if( parseInt($('.m').val().trim())>=parseInt(nombre_message_tout))
     {
         var url='authsms.php?sender='+expediteur+'&message='+message+"&nb="+nombre_message+'&recipient='+groupe_numero_nom_destinataire;
         alert(url);
@@ -191,69 +157,8 @@ function envoyerMultiple(expediteur,groupe_numero_nom_destinataire,message)
         $('.nombre_message_insuffisant').show(500);
     }
 
-
-
-    /*for( var i=0;i<tableau_numeros.length;i++)
-    {
-        alert(tableau_numeros[i]);
-
-        //tableau_numeros.splice(0,1);  //effacer l'element se trouvant à l'indice 0 et un caractère
-
-    }*/
-    //alert('ok '+tableau_numeros.length);
 }
 
-
-/***********************************************************************************************************************/
-//test
-/*function envoyerMessage(expediteur,destinataire,message)
-{
-    var url='envoiMultiple.php?sender='+expediteur+'&recipient='+destinataire+'&message='+message+"&nb="+(parseInt(nombre_message/160)+1);
-    alert(url);
-    $.ajax({
-        url : url,
-        type : 'GET',
-        dataType : 'html',
-        success: function(reponse, statut){
-
-            if(reponse=='non')
-            {
-
-            }
-            else
-            {
-                 $.ajax({
-                    url : reponse,
-                    type : 'GET',
-                    dataType : 'html',
-                    success: function(retour, statut2){},
-                    error: function(resultat, statut){}
-                });
-            }
-        },
-        error: function(resultat, statut){}
-    });
-}*/
-/***********************************************************************************************************************/
-
-//test
-/*
-function getNumber(texte)
-{
-
-    var url='../execute/get_number.php?texte='+texte;
-    //alert(url);
-    $.ajax({
-                    url : reponse,
-                    type : 'GET',
-                    dataType : 'html',
-                    success: function(retour, statut2){
-                        return retour;
-                    },
-                    error: function(resultat, statut){}
-                });
-}
-*/
 
 /***********************************************************************************************************************/
 
@@ -291,6 +196,7 @@ $('.ajouter_contact_envoi_msg').click(function(){
     });
 });
 
+/***********************************************************************************************************************/
 
 
 
@@ -299,6 +205,7 @@ $('.ajouter_contact_envoi_msg').click(function(){
 
 
 
+/***********************************************************************************************************************/
 
 function addEvent() {
 
@@ -310,24 +217,16 @@ function addEvent() {
             $('.boutonCocher').prop('checked',$('.selectionner_tout_contact').prop('checked') );
             $('.status_contact').html('Deselectionner');
 
-            alert( $('.liste_contacts_vue').html());
+            //alert( $('.liste_contacts_vue').html());
+
 
             $('.boutonCocher').each(function() {
-                alert('ici '+$('.texte_a_afficher').html()+"/"+$('.bouton_cacher_utilise').html());
-                 $('.texte_a_afficher').html( $(this).attr('data-contact') );
 
-                // alert($('.bouton_cacher_utilise').html()+".............."+$(this).attr('data-contact'));
-                $('.texte_a_afficher').addClass('nouveau'+identification_unique);
-                $('.liste_contacts_vue').html(  $('.liste_contacts_vue').html()+$('.bouton_cacher_utilise').html());
-                $('.liste_contacts_vue button').addClass('nouveau'+identification_unique);
-                $('.liste_contacts_vue button').addClass('nouveau'+identification_unique);
-                $('.nouveau'+identification_unique).attr('data-nom', $(this).attr('data-contact') );
-
-                $('.liste_contacts_vue button').removeClass('texte_a_afficher');
+                var code_bouton='<button type="button" class="btn btn-primary les_contacts '+$(this).attr('data-numero')+'" data-nom="'+$(this).attr('data-contact')+'"  data-numero="'+$(this).attr('data-numero')+'" data-toggle="button">'+$(this).attr('data-contact')+'</button>';
+                $('.liste_contacts_vue').html(  $('.liste_contacts_vue').html()+code_bouton);
                 ajouterNumeroDestinataire($(this).attr('data-contact'));
 
             });
-            alert( $('.liste_contacts_vue').html());
 
         }
         else
@@ -337,21 +236,30 @@ function addEvent() {
             $('.status_contact').html('Deselectionner');
 
             $('.boutonCocher').each(function() {
-                $('.les_contacts[data-nom="'+$(this).attr('data-contact')+'"]').remove();
+                $('.'+$(this).attr('data-numero')).remove();
                 supprimerNumeroDestinataire($(this).attr('data-contact'));
             });
         }
-
-        //alert('ok ' +numeroGroupe);
 
     });
 
 
 
 
-    /*$('.nouveau1').click(function () {
-        alert('ok');
-    });*/
+    $('.boutonCocher').click(function () {
+        if($(this).prop('checked'))
+        {
+            var code_bouton='<button type="button" class="btn btn-primary les_contacts '+$(this).attr('data-numero')+'" data-nom="'+$(this).attr('data-contact')+'"  data-numero="'+$(this).attr('data-numero')+'" data-toggle="button">'+$(this).attr('data-contact')+'</button>';
+            $('.liste_contacts_vue').html(  $('.liste_contacts_vue').html()+code_bouton);
+            ajouterNumeroDestinataire($(this).attr('data-contact'));
+
+        }
+        else
+        {
+            $('.'+$(this).attr('data-numero')).remove();
+            supprimerNumeroDestinataire($(this).attr('data-contact'));
+        }
+    });
 
 
 
@@ -361,6 +269,7 @@ function addEvent() {
 
 
 
+/***********************************************************************************************************************/
 
 
 
@@ -398,6 +307,7 @@ function addEvent() {
 function ajouterNumeroDestinataire(numero)
 {
     tableau_numeros.push(numero);
+    identification_unique++;
 }
 
 function supprimerNumeroDestinataire(numero)

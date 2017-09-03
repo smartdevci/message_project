@@ -34,10 +34,10 @@ require_once '../dashboard/modele/modele_gerer_contact_groupe.php';
             <td></td>
             <td></td>
             <td>
-                <input type="checkbox" data-contact="<?php echo $contact['nom'] ?>" class="boutonCocher" />
+                <input type="checkbox" data-contact="<?php echo $contact['nom'] ?>"  data-numero="<?php echo $contact['numero'] ?>" class="boutonCocher" />
             </td>
-            <td class="nom"><?php echo htmlspecialchars($contact['nom']) ?></td>
-            <td class="numero"> <?php echo htmlspecialchars($contact['numero']) ?></td>
+            <td class="nom"><?php echo trim(htmlspecialchars($contact['nom'])) ?></td>
+            <td class="numero"> <?php echo trim(htmlspecialchars($contact['numero'])) ?></td>
 
         </tr>
         <?php

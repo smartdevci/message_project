@@ -24,11 +24,16 @@
             <a href="envoi.php"><i class="icon-chevron-right"></i> Envoi SMS</a>
         </li>
 
-        
+
 
 
         <li <?php echo ($_SESSION['page']=='contact') ? 'class="active"':''; ?>>
             <a href="my-contact.php"><i class="icon-chevron-right"></i> Mes contacts</a>
+        </li>
+
+
+        <li <?php echo ($_SESSION['page']=='recharger') ? 'class="active"':''; ?>>
+            <a href="recharger.php"><i class="icon-chevron-right"></i> Recharger</a>
         </li>
 
         <!--<li <?php echo ($_SESSION['page']=='contactGroup') ? 'class="active"':''; ?>>

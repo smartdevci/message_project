@@ -105,7 +105,7 @@ function envoyerMultiple(expediteur,groupe_numero_nom_destinataire,message)
     if( parseInt($('.m').val().trim())>=parseInt(nombre_message_tout))
     {
         var url='authsms.php?sender='+expediteur+'&message='+message+"&nb="+(($('.recipient').val().trim()=="")?nombre_message_tout:nombre_message_tout+1)+'&recipient='+groupe_numero_nom_destinataire;
-        alert(url);
+        //alert(url);
         $.ajax({
             url : url,
             type : 'GET',

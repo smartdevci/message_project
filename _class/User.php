@@ -213,6 +213,18 @@ class User
         return $requete->fetchAll();
     }
 
+
+    /**********************************************************************************************************************/
+
+    public function getSouscription()
+    {
+        $connexion=DAO::getConnection();
+        $requete=$connexion->prepare("SELECT *, DATE_FORMAT(date_rechargement,'%d-%m-%Y %H:%i:%s') as la_date FROM rechargement r, offres o WHERE r.id_offre=o.id_offre AND id_user=:id_user ORDER BY date_rechargement DESC");
+        $requete->bindValue(':id_user',$this->getId());
+        $requete->execute();
+        return $requete->fetchAll();
+    }
+
     /**********************************************************************************************************************/
 
     function register($id_type,$password)

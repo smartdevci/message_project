@@ -15,38 +15,38 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_class/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="225" column="5" lean-forward="true" selection-start-line="218" selection-start-column="4" selection-end-line="225" selection-end-column="5" />
+            <state relative-caret-position="495">
+              <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
               <folding>
-                <marker date="1504710026525" expanded="true" signature="2695:2739" ph="SELECT * FRO... contact" />
-                <marker date="1504710026525" expanded="true" signature="2695:2752" ph="SELECT * FRO... contact" />
-                <marker date="1504710026525" expanded="true" signature="3018:3156" ph="SELECT id_co... contact" />
-                <marker date="1504710026525" expanded="true" signature="3091:3155" ph="SELECT id_co... contact_groupe" />
-                <marker date="1504710026525" expanded="true" signature="3804:3933" ph="SELECT * FRO... contact" />
-                <marker date="1504710026525" expanded="true" signature="3804:3946" ph="SELECT * FRO... contact" />
-                <marker date="1504710026525" expanded="true" signature="3868:3932" ph="SELECT id_co... contact_groupe" />
-                <marker date="1504710026525" expanded="true" signature="4222:4302" ph="SELECT * FRO... contact" />
-                <marker date="1504710026525" expanded="true" signature="4222:4315" ph="SELECT * FRO... contact" />
-                <marker date="1504710026525" expanded="true" signature="4222:4328" ph="SELECT * FRO... contact" />
-                <marker date="1504710026525" expanded="true" signature="4662:4819" ph="SELECT g.nom... contact_groupe" />
-                <marker date="1504710026525" expanded="true" signature="5376:5536" ph="SELECT * FRO... rechar" />
-                <marker date="1504710026525" expanded="true" signature="5376:5558" ph="SELECT *, DA... rechargement" />
-                <marker date="1504710026525" expanded="true" signature="6065:6218" ph="INSERT INTO students... " />
-                <marker date="1504710026525" expanded="true" signature="7047:7091" ph="SELECT * FRO... message" />
-                <marker date="1504710026525" expanded="true" signature="7374:7447" ph="SELECT SUM(q... rechargement" />
-                <marker date="1504710026525" expanded="true" signature="7937:8014" ph="SELECT * FRO... message" />
-                <marker date="1504710026525" expanded="true" signature="8770:8824" ph="SELECT * FRO... participant" />
-                <marker date="1504710026525" expanded="true" signature="9127:9238" ph="SELECT * FRO... users" />
+                <marker date="1504790275233" expanded="true" signature="2695:2739" ph="SELECT * FRO... contact" />
+                <marker date="1504790275233" expanded="true" signature="2695:2752" ph="SELECT * FRO... contact" />
+                <marker date="1504790275233" expanded="true" signature="3018:3156" ph="SELECT id_co... contact" />
+                <marker date="1504790275233" expanded="true" signature="3091:3155" ph="SELECT id_co... contact_groupe" />
+                <marker date="1504790275233" expanded="true" signature="3804:3933" ph="SELECT * FRO... contact" />
+                <marker date="1504790275233" expanded="true" signature="3804:3946" ph="SELECT * FRO... contact" />
+                <marker date="1504790275233" expanded="true" signature="3868:3932" ph="SELECT id_co... contact_groupe" />
+                <marker date="1504790275233" expanded="true" signature="4222:4302" ph="SELECT * FRO... contact" />
+                <marker date="1504790275233" expanded="true" signature="4222:4315" ph="SELECT * FRO... contact" />
+                <marker date="1504790275233" expanded="true" signature="4222:4328" ph="SELECT * FRO... contact" />
+                <marker date="1504790275233" expanded="true" signature="4662:4819" ph="SELECT g.nom... contact_groupe" />
+                <marker date="1504790275233" expanded="true" signature="5376:5536" ph="SELECT * FRO... rechar" />
+                <marker date="1504790275233" expanded="true" signature="5376:5558" ph="SELECT *, DA... rechargement" />
+                <marker date="1504790275233" expanded="true" signature="6066:6219" ph="INSERT INTO students... " />
+                <marker date="1504790275233" expanded="true" signature="7073:7117" ph="SELECT * FRO... message" />
+                <marker date="1504790275233" expanded="true" signature="7400:7473" ph="SELECT SUM(q... rechargement" />
+                <marker date="1504790275233" expanded="true" signature="7963:8040" ph="SELECT * FRO... message" />
+                <marker date="1504790275233" expanded="true" signature="8796:8850" ph="SELECT * FRO... participant" />
+                <marker date="1504790275233" expanded="true" signature="9153:9264" ph="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modele_recharger_admin.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="modele_recharger_admin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashboard/modele/modele_recharger_admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="204">
+              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -55,11 +55,9 @@
       <file leaf-file-name="details_recharger_admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_recharger_admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="102" column="85" lean-forward="true" selection-start-line="102" selection-start-column="85" selection-end-line="102" selection-end-column="85" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="1048">
+              <caret line="102" column="85" lean-forward="false" selection-start-line="102" selection-start-column="85" selection-end-line="102" selection-end-column="85" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,31 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rechargera.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/rechargera.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="valider_rechargement.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/execute/valider_rechargement.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DAO.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DAO.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_class/DAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="807">
-              <caret line="303" column="39" lean-forward="false" selection-start-line="303" selection-start-column="27" selection-end-line="303" selection-end-column="39" />
+            <state relative-caret-position="1003">
+              <caret line="64" column="51" lean-forward="false" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="51" />
               <folding>
                 <marker date="1504789031944" expanded="true" signature="1017:1059" ph="SELECT * FRO... users" />
                 <marker date="1504789031944" expanded="true" signature="1841:2028" ph="INSERT INTO message... " />
@@ -127,21 +105,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="envoi_msg.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/envoi_msg.js">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="107" column="10" lean-forward="false" selection-start-line="107" selection-start-column="10" selection-end-line="107" selection-end-column="10" />
+            <state relative-caret-position="-1920">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="envoi.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard/envoi.php">
+      <file leaf-file-name="connexion.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/connexion.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="112" column="210" lean-forward="false" selection-start-line="112" selection-start-column="210" selection-end-line="112" selection-end-column="210" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="se_connecter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/execute/se_connecter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="session_var.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard/session_var.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -150,8 +148,8 @@
       <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/Inc/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+            <state relative-caret-position="427">
+              <caret line="40" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -169,7 +167,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ajout</find>
       <find>input</find>
       <find>selectionner_tout_contact</find>
       <find>authsms</find>
@@ -194,11 +191,12 @@
       <find>offres</find>
       <find>$msgType</find>
       <find>getOffre</find>
-      <find>getuser</find>
       <find>fermer</find>
       <find>getUser</find>
       <find>update</find>
       <find>valider</find>
+      <find>getSouscriptionValide</find>
+      <find>getuser</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -207,8 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/register_user.js" />
-        <option value="$PROJECT_DIR$/authsms.php" />
         <option value="$PROJECT_DIR$/dashboard/index.php" />
         <option value="$PROJECT_DIR$/dashboard/dashboard.php" />
         <option value="$PROJECT_DIR$/dashboard/Inc/navbar.php" />
@@ -248,16 +244,18 @@
         <option value="$PROJECT_DIR$/essai.php" />
         <option value="$PROJECT_DIR$/dashboard/modele/modele_recharger.php" />
         <option value="$PROJECT_DIR$/dashboard/Inc/details_recharger.php" />
-        <option value="$PROJECT_DIR$/_class/User.php" />
-        <option value="$PROJECT_DIR$/dashboard/Inc/sidebar.php" />
         <option value="$PROJECT_DIR$/js/envoi_msg.js" />
         <option value="$PROJECT_DIR$/dashboard/envoi.php" />
-        <option value="$PROJECT_DIR$/dashboard/modele/modele_recharger_admin.php" />
         <option value="$PROJECT_DIR$/dashboard/Inc/details_recharger_admin.php" />
         <option value="$PROJECT_DIR$/dashboard/rechargera.php" />
         <option value="$PROJECT_DIR$/js/rechargera.js" />
         <option value="$PROJECT_DIR$/execute/valider_rechargement.php" />
         <option value="$PROJECT_DIR$/_class/DAO.php" />
+        <option value="$PROJECT_DIR$/js/register_user.js" />
+        <option value="$PROJECT_DIR$/_class/User.php" />
+        <option value="$PROJECT_DIR$/dashboard/session_var.php" />
+        <option value="$PROJECT_DIR$/dashboard/Inc/sidebar.php" />
+        <option value="$PROJECT_DIR$/dashboard/modele/modele_recharger_admin.php" />
       </list>
     </option>
   </component>
@@ -290,7 +288,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -328,7 +325,39 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="execute" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="message_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="message_project" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="message_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="message_project" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Inc" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -348,6 +377,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -469,12 +499,13 @@
       <workItem from="1504285375334" duration="20053000" />
       <workItem from="1504434678882" duration="38818000" />
       <workItem from="1504703476933" duration="6046000" />
-      <workItem from="1504711075091" duration="8315000" />
+      <workItem from="1504711075091" duration="9555000" />
+      <workItem from="1504868055913" duration="2407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259775000" />
+    <option name="totallyTimeSpent" value="263422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -510,56 +541,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/execute/update_contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/editor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/execute/add_contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_class/all_class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/version/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/execute/update_groupe.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/execute/delete_groupe.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/execute/supprimer_contact_in_groupe.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -761,9 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -831,19 +809,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/Inc/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/envoi_msg.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="107" column="10" lean-forward="false" selection-start-line="107" selection-start-column="10" selection-end-line="107" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -851,60 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="112" column="210" lean-forward="false" selection-start-line="112" selection-start-column="210" selection-end-line="112" selection-end-column="210" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_class/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="225" column="5" lean-forward="true" selection-start-line="218" selection-start-column="4" selection-end-line="225" selection-end-column="5" />
-          <folding>
-            <marker date="1504710026525" expanded="true" signature="2695:2739" ph="SELECT * FRO... contact" />
-            <marker date="1504710026525" expanded="true" signature="2695:2752" ph="SELECT * FRO... contact" />
-            <marker date="1504710026525" expanded="true" signature="3018:3156" ph="SELECT id_co... contact" />
-            <marker date="1504710026525" expanded="true" signature="3091:3155" ph="SELECT id_co... contact_groupe" />
-            <marker date="1504710026525" expanded="true" signature="3804:3933" ph="SELECT * FRO... contact" />
-            <marker date="1504710026525" expanded="true" signature="3804:3946" ph="SELECT * FRO... contact" />
-            <marker date="1504710026525" expanded="true" signature="3868:3932" ph="SELECT id_co... contact_groupe" />
-            <marker date="1504710026525" expanded="true" signature="4222:4302" ph="SELECT * FRO... contact" />
-            <marker date="1504710026525" expanded="true" signature="4222:4315" ph="SELECT * FRO... contact" />
-            <marker date="1504710026525" expanded="true" signature="4222:4328" ph="SELECT * FRO... contact" />
-            <marker date="1504710026525" expanded="true" signature="4662:4819" ph="SELECT g.nom... contact_groupe" />
-            <marker date="1504710026525" expanded="true" signature="5376:5536" ph="SELECT * FRO... rechar" />
-            <marker date="1504710026525" expanded="true" signature="5376:5558" ph="SELECT *, DA... rechargement" />
-            <marker date="1504710026525" expanded="true" signature="6065:6218" ph="INSERT INTO students... " />
-            <marker date="1504710026525" expanded="true" signature="7047:7091" ph="SELECT * FRO... message" />
-            <marker date="1504710026525" expanded="true" signature="7374:7447" ph="SELECT SUM(q... rechargement" />
-            <marker date="1504710026525" expanded="true" signature="7937:8014" ph="SELECT * FRO... message" />
-            <marker date="1504710026525" expanded="true" signature="8770:8824" ph="SELECT * FRO... participant" />
-            <marker date="1504710026525" expanded="true" signature="9127:9238" ph="SELECT * FRO... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/modele/modele_recharger_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_recharger_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="102" column="85" lean-forward="true" selection-start-line="102" selection-start-column="85" selection-end-line="102" selection-end-column="85" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/rechargera.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="61" column="29" lean-forward="false" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -925,10 +840,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/register_user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="75" column="12" lean-forward="false" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/execute/register_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/rechargera.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="61" column="29" lean-forward="false" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_recharger_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1048">
+          <caret line="102" column="85" lean-forward="false" selection-start-line="102" selection-start-column="85" selection-end-line="102" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_class/DAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="303" column="39" lean-forward="false" selection-start-line="303" selection-start-column="27" selection-end-line="303" selection-end-column="39" />
+        <state relative-caret-position="1003">
+          <caret line="64" column="51" lean-forward="false" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="51" />
           <folding>
             <marker date="1504789031944" expanded="true" signature="1017:1059" ph="SELECT * FRO... users" />
             <marker date="1504789031944" expanded="true" signature="1841:2028" ph="INSERT INTO message... " />
@@ -953,6 +908,82 @@
             <marker date="1504789031944" expanded="true" signature="7250:7292" ph="SELECT * FRO... contact" />
             <marker date="1504789031944" expanded="true" signature="7617:7653" ph="SELECT * FRO... contact" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/connexion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1920">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/execute/se_connecter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_class/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <marker date="1504790275233" expanded="true" signature="2695:2739" ph="SELECT * FRO... contact" />
+            <marker date="1504790275233" expanded="true" signature="2695:2752" ph="SELECT * FRO... contact" />
+            <marker date="1504790275233" expanded="true" signature="3018:3156" ph="SELECT id_co... contact" />
+            <marker date="1504790275233" expanded="true" signature="3091:3155" ph="SELECT id_co... contact_groupe" />
+            <marker date="1504790275233" expanded="true" signature="3804:3933" ph="SELECT * FRO... contact" />
+            <marker date="1504790275233" expanded="true" signature="3804:3946" ph="SELECT * FRO... contact" />
+            <marker date="1504790275233" expanded="true" signature="3868:3932" ph="SELECT id_co... contact_groupe" />
+            <marker date="1504790275233" expanded="true" signature="4222:4302" ph="SELECT * FRO... contact" />
+            <marker date="1504790275233" expanded="true" signature="4222:4315" ph="SELECT * FRO... contact" />
+            <marker date="1504790275233" expanded="true" signature="4222:4328" ph="SELECT * FRO... contact" />
+            <marker date="1504790275233" expanded="true" signature="4662:4819" ph="SELECT g.nom... contact_groupe" />
+            <marker date="1504790275233" expanded="true" signature="5376:5536" ph="SELECT * FRO... rechar" />
+            <marker date="1504790275233" expanded="true" signature="5376:5558" ph="SELECT *, DA... rechargement" />
+            <marker date="1504790275233" expanded="true" signature="6066:6219" ph="INSERT INTO students... " />
+            <marker date="1504790275233" expanded="true" signature="7073:7117" ph="SELECT * FRO... message" />
+            <marker date="1504790275233" expanded="true" signature="7400:7473" ph="SELECT SUM(q... rechargement" />
+            <marker date="1504790275233" expanded="true" signature="7963:8040" ph="SELECT * FRO... message" />
+            <marker date="1504790275233" expanded="true" signature="8796:8850" ph="SELECT * FRO... participant" />
+            <marker date="1504790275233" expanded="true" signature="9153:9264" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/session_var.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/Inc/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="40" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/modele/modele_recharger_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

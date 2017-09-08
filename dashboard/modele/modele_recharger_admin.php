@@ -8,6 +8,10 @@
 require_once '../_class/all_class.php';
 //session_start();
 //var_dump($_SESSION);
+if($_SESSION['com_message__type']=="admin")
+{
+    header('Location:./');
+}
 
 $id=$_SESSION['com_message__id'];
 $user=DAO::getUser($id);

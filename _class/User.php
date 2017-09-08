@@ -232,6 +232,7 @@ class User
         $autorisation=$this->autorise_inscription();
         $connexion=DAO::getConnection();
 
+
         if($autorisation['isAllowed']==1)
         {
 
@@ -240,15 +241,19 @@ class User
 					VALUES (:nom, :user_name, :email, :password, :name_messenger, :id_type)
 					");
 
+
+
+
                 $requete->bindValue(':nom', utf8_decode($this->nom), PDO::PARAM_STR);
                 $requete->bindValue(':user_name', $this->username, PDO::PARAM_STR);
                 $requete->bindValue(':email', $this->email, PDO::PARAM_STR);
                 $requete->bindValue(':password', $password, PDO::PARAM_STR);
-                $requete->bindValue(':name_messenger', $this->username, PDO::PARAM_STR);
+                $requete->bindValue(':name_messenger', $this->name_messenger, PDO::PARAM_STR);
                 $requete->bindValue(':id_type', $id_type, PDO::PARAM_INT);
                 $requete->execute();
 
                 $this->id=$connexion->lastInsertId();
+               
         }
 
         echo $autorisation['isAllowed']."/".$autorisation['message']."/".$this->id;

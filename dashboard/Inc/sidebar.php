@@ -36,9 +36,16 @@
             <a href="recharger.php"><i class="icon-chevron-right"></i> Recharger</a>
         </li>
 
-        <li <?php echo ($_SESSION['page']=='rechargera') ? 'class="active"':''; ?>>
-            <a href="rechargera.php"><i class="icon-chevron-right"></i> Gestion rechargement</a>
-        </li>
+        <?php
+        if($_SESSION['com_message__type']=="admin")
+        {
+            ?>
+            <li <?php echo ($_SESSION['page']=='rechargera') ? 'class="active"':''; ?>>
+                <a href="rechargera.php"><i class="icon-chevron-right"></i> Gestion rechargement</a>
+            </li>
+            <?php
+        }
+        ?>
 
         <!--<li <?php echo ($_SESSION['page']=='contactGroup') ? 'class="active"':''; ?>>
             <a href="contact-group.php"><i class="icon-chevron-right"></i> Créer un groupe de contacts</a>

@@ -9,7 +9,7 @@
 class Server
 {
     const host="localhost";
-    const database_name="message";
+    const database_name="appsm768963_20nsul";
     const user="root";
     const password="";
 

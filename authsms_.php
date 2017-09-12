@@ -41,7 +41,8 @@ $password = $_SESSION['pwd'];
             $flash = 0;
             $ip = $_SERVER['REMOTE_ADDR'];
 //            echo $ip. "<br>";
-            $url="https://1s2u.com/sms/sendsms/sendsms.asp?username=" . $login . "&password=" .$password. "&mt=" .$msgType. "&fl=" .$flash. "&sid=" .$sender. "&mno=" .$recipient. "&ipcl=" .$ip. "&msg=" .$message;
+            $url="https://1s2u.com/sms/sendsms/sendsms.asp?username=" . $login . "&password=" .$password. "&mt=" .$msgType. "&fl=" .$flash. "&sid=" .$sender. "&mno=" .$recipient. "&ipcl=" .$ip. "&msg=" .DAO::no_accent($message);
+            //$url="https://1s2u.com/sms/sendsms/sendsms.asp?username=sylvere18&password=web43947&mt=0&fl=0&sid=test&mno=33769089717&ipcl=127.0.0.1&msg=message;
 
             echo $url;
         }

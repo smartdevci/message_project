@@ -140,8 +140,8 @@ class DAO
     public static function getOffre()
     {
         $connexion=DAO::getConnection();
-        $requete=$connexion->query("SELECT * FROM offres ORDER BY nom_offre");
-        $requete->execute();
+        $requete=$connexion->query("SELECT * FROM offres WHERE effacer=0 ORDER BY nom_offre");
+        //$requete->execute();
         return $requete->fetchAll();
     }
 

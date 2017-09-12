@@ -43,6 +43,9 @@
             <li <?php echo ($_SESSION['page']=='rechargera') ? 'class="active"':''; ?>>
                 <a href="rechargera.php"><i class="icon-chevron-right"></i> Gestion rechargement</a>
             </li>
+            <li <?php echo ($_SESSION['page']=='offres') ? 'class="active"':''; ?>>
+                <a href="offres.php"><i class="icon-chevron-right"></i> Offres</a>
+            </li>
             <?php
         }
         ?>

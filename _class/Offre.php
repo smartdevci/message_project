@@ -63,12 +63,12 @@ class Offre
 
     public function getPrice()
     {
-        return $this->price;
+        return intval($this->price);
     }
 
     public function getNumberMsg()
     {
-        return $this->number_msg;
+        return intval($this->number_msg);
     }
 
 
@@ -88,10 +88,20 @@ class Offre
     public function update()
     {
         $connexion=DAO::getConnection();
-        $requete=$connexion->prepare("UPDATE groupe SET nom_groupe=:nom WHERE id_groupe=:id_groupe");
+        //$query="UPDATE offres SET nom_offre='".$this->getName()."',nombre_sms=".intval($this->getNumberMsg()).", prix=".intval($this->getPrice())." WHERE id_offre=".$this->getId();
+        //echo $query;
+       $query="UPDATE offres SET nom_offre=:nom,nombre_sms=:nombre_sms, prix=:price WHERE id_offre=:id_offre";
+        $requete=$connexion->prepare($query);
         $requete->bindValue(":nom",$this->getName(),PDO::PARAM_STR);
-        $requete->bindValue(":id_groupe",$this->getId(),PDO::PARAM_INT);
+        $requete->bindValue(":nombre_sms",$this->getNumberMsg(),PDO::PARAM_INT);
+        $requete->bindValue(":price",$this->getPrice(),PDO::PARAM_INT);
+        $requete->bindValue(":id_offre",$this->getId(),PDO::PARAM_INT);
+        var_dump($requete);
         $requete->execute();
+        echo $requete->rowCount();
+
+
+        echo $this->getName()."/".$this->getNumberMsg()."/".$this->getPrice()."/".$this->getId()."/".$query;
 
     }
 

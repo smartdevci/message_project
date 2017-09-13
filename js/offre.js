@@ -1,6 +1,7 @@
 /**
  * Created by Melaine on 22/08/2017.
  */
+//alert('ok');
 
 //alert('ok');
 var old_nom="";
@@ -70,30 +71,35 @@ $('.modifier_offre').click(function(){
     old_nombre_sms=$(class_nom_offre+' td.nombre_sms').html().trim();
     old_prix=$(class_nom_offre+' td.prix').html().trim();
 
-    alert(old_nom_offre);
+    //alert(old_nom_offre);
 
 
     id_modification_actuel_offre=$(this).attr('data-id');
 
-    $(class_nom_offre+' td.nom_offre').html('<input type="text" class="nom_offre_modifier" value="'+old_nom_offre.trim()+'" />');
-    $(class_nom_offre+' td.nombre_sms').html('<input type="text" class="nombre_sms_modifier" value="'+old_nombre_sms.trim()+'"/>');
-    $(class_nom_offre+' td.prix').html('<input type="text" class="prix_modifier" value="'+old_prix.trim()+'"/>');
-    alert($('table').html());
+    $(class_nom_offre+' td.nom_offre').html('<input type="text" class="nom_offre_modifier" data-id="'+$(this).attr('data-id')+'" value="'+old_nom_offre.trim()+'" />');
+    $(class_nom_offre+' td.nombre_sms').html('<input type="text" class="nombre_sms_modifier"  data-id="'+$(this).attr('data-id')+'" value="'+old_nombre_sms.trim()+'"/>');
+    $(class_nom_offre+' td.prix').html('<input type="text" class="prix_modifier"  data-id="'+$(this).attr('data-id')+'" value="'+old_prix.trim()+'"/>');
+    //alert($('table').html());
+    addEventAfterUpdate();
 });
+
+
 
 /***********************************************************************************************************************/
 
-$('.validate_modification_offre').click(function() {
 
-}
 
-function validate_modification() {
 
-    $('.modifier_offre'+$(this).attr('data-id')).show();
-    $('.validate_modification_offre'+$(this).attr('data-id')).hide();
-    $('.cancel_modification_offre'+$(this).attr('data-id')).hide();
 
-    var class_nom_offre='.ligne_offre'+$(this).attr('data-id');
+
+
+function validate_modification(id) {
+
+    $('.modifier_offre'+id).show();
+    $('.validate_modification_offre'+id).hide();
+    $('.cancel_modification_offre'+id).hide();
+
+    var class_nom_offre='.ligne_offre'+id;
     var nom_offre=$('.nom_offre_modifier').val().trim();
     var nombre_sms=$('.nombre_sms_modifier').val().trim();
     var prix=$('.prix_modifier').val().trim();
@@ -102,13 +108,17 @@ function validate_modification() {
     id_modification_actuel_offre=0;
 
 
-    var url="../execute/update_offre.php?nom="+nom_offre+"&nombre_sms="+nombre_sms+"&id_offre="+$(this).attr('data-id');
+    var url="../execute/update_offre.php?nom="+nom_offre+"&nombre_sms="+nombre_sms+"&prix="+prix+"&id_offre="+id;
     //alert(url);
     $.ajax({
         url : url,
         type : 'GET',
         dataType : 'html',
-        success : function(code_html, statut){},
+        success : function(code_html, statut){
+            $(class_nom_offre+' td.nom_offre').html(nom_offre);
+            $(class_nom_offre+' td.nombre_sms').html(nombre_sms);
+            $(class_nom_offre+' td.prix').html(prix);
+        },
         error : function(resultat, statut, erreur){
             alert(resultat.responseText);
         }
@@ -116,6 +126,22 @@ function validate_modification() {
 
     });
 }
+
+
+
+
+
+
+function addEventAfterUpdate()
+{
+    $('.nombre_sms_modifier, .prix_modifier, .nom_offre_modifier').keyup(function(event){
+        if(event.keyCode==13)
+        {
+            validate_modification($('.nom_offre_modifier').attr('data-id'));
+        }
+    });
+}
+
 
 
 

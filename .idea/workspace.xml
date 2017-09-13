@@ -25,8 +25,28 @@
       <file leaf-file-name="offre.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/offre.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+            <state relative-caret-position="697">
+              <caret line="117" column="12" lean-forward="false" selection-start-line="117" selection-start-column="12" selection-end-line="117" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update_offre.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/execute/update_offre.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/contact.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="381" column="33" lean-forward="false" selection-start-line="381" selection-start-column="32" selection-end-line="381" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -57,21 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modele_offres.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard/modele/modele_offres.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="details_offres.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_offres.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="59" column="49" lean-forward="false" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+            <state relative-caret-position="612">
+              <caret line="83" column="48" lean-forward="false" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -90,13 +100,19 @@
       <file leaf-file-name="Offre.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_class/Offre.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1819">
-              <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+            <state relative-caret-position="457">
+              <caret line="70" column="40" lean-forward="false" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
               <folding>
-                <marker date="1505148446656" expanded="true" signature="1228:1315" ph="INSERT INTO groupe... " />
-                <marker date="1505148446656" expanded="true" signature="1747:1807" ph="UPDATE group... " />
-                <marker date="1505148446656" expanded="true" signature="2107:2159" ph="UPDATE offre... " />
-                <marker date="1505148446656" expanded="true" signature="2141:2154" ph="DELETE FROM " />
+                <marker date="1505234398756" expanded="true" signature="1244:1331" ph="INSERT INTO groupe... " />
+                <marker date="1505234398756" expanded="true" signature="1743:1772" ph="UPDATE offre... " />
+                <marker date="1505234398756" expanded="true" signature="1743:1805" ph="UPDATE offre... " />
+                <marker date="1505234398756" expanded="true" signature="1743:1845" ph="UPDATE offre... " />
+                <marker date="1505234398756" expanded="true" signature="1743:1890" ph="UPDATE offre... " />
+                <marker date="1505234398756" expanded="true" signature="1743:1906" ph="UPDATE offre... " />
+                <marker date="1505234398756" expanded="true" signature="1946:2039" ph="UPDATE offre... " />
+                <marker date="1505234398756" expanded="true" signature="2096:2116" ph="/*${$requete... " />
+                <marker date="1505234398756" expanded="true" signature="2710:2762" ph="UPDATE offre... " />
+                <marker date="1505234398756" expanded="true" signature="2744:2757" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -135,16 +151,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all_class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_class/all_class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -157,10 +163,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setNumeroEnvoi</find>
-      <find>texte_a_afficher</find>
-      <find>supprimerNumeroDestinataire</find>
-      <find>addEvent</find>
       <find>selec</find>
       <find>ajouterNumeroDestinataire</find>
       <find>liste_contacts_vue</find>
@@ -177,7 +179,6 @@
       <find>getOffre</find>
       <find>fermer</find>
       <find>getUser</find>
-      <find>update</find>
       <find>valider</find>
       <find>getSouscriptionValide</find>
       <find>getuser</find>
@@ -187,6 +188,11 @@
       <find>geto</find>
       <find>groupe</find>
       <find>col</find>
+      <find>validate_modification_offre</find>
+      <find>input</find>
+      <find>update</find>
+      <find>update()</find>
+      <find>alert</find>
     </findStrings>
     <replaceStrings>
       <replace>offre</replace>
@@ -198,7 +204,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/execute/update_contact.php" />
         <option value="$PROJECT_DIR$/execute/delete_contact.php" />
         <option value="$PROJECT_DIR$/execute/add_groupe.php" />
         <option value="$PROJECT_DIR$/execute/delete_groupe.php" />
@@ -244,10 +249,11 @@
         <option value="$PROJECT_DIR$/dashboard/offres.php" />
         <option value="$PROJECT_DIR$/execute/add_offre.php" />
         <option value="$PROJECT_DIR$/_class/Groupe.php" />
-        <option value="$PROJECT_DIR$/_class/Offre.php" />
         <option value="$PROJECT_DIR$/_class/DAO.php" />
         <option value="$PROJECT_DIR$/execute/delete_offre.php" />
         <option value="$PROJECT_DIR$/dashboard/Inc/details_offres.php" />
+        <option value="$PROJECT_DIR$/execute/update_offre.php" />
+        <option value="$PROJECT_DIR$/_class/Offre.php" />
         <option value="$PROJECT_DIR$/js/offre.js" />
       </list>
     </option>
@@ -347,15 +353,15 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\Message\dashboard" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\message_project\execute" />
       <recent name="C:\wamp64\www\message_project\js" />
       <recent name="C:\wamp64\www\message_project\_class" />
       <recent name="C:\wamp64\www\message_project\dashboard\modele" />
       <recent name="C:\wamp64\www\message_project\dashboard\Inc" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Message\dashboard" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -465,12 +471,12 @@
       <workItem from="1505047926531" duration="752000" />
       <workItem from="1505055039436" duration="4491000" />
       <workItem from="1505147326355" duration="9229000" />
-      <workItem from="1505204930131" duration="1744000" />
+      <workItem from="1505204930131" duration="10693000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="281478000" />
+    <option name="totallyTimeSpent" value="290427000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -506,24 +512,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dashboard/modele/modele_envoi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/my-contact.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/contact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5525">
-          <caret line="325" column="31" lean-forward="false" selection-start-line="325" selection-start-column="24" selection-end-line="325" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -623,6 +615,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -803,6 +796,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="227" lean-forward="false" selection-start-line="43" selection-start-column="227" selection-end-line="43" selection-end-column="227" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -896,19 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_class/Offre.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding>
-            <marker date="1505148446656" expanded="true" signature="1228:1315" ph="INSERT INTO groupe... " />
-            <marker date="1505148446656" expanded="true" signature="1747:1807" ph="UPDATE group... " />
-            <marker date="1505148446656" expanded="true" signature="2107:2159" ph="UPDATE offre... " />
-            <marker date="1505148446656" expanded="true" signature="2141:2154" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/offres.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="749">
@@ -917,18 +898,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="381" column="33" lean-forward="false" selection-start-line="381" selection-start-column="32" selection-end-line="381" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/execute/update_offre.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_class/Offre.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="70" column="40" lean-forward="false" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+          <folding>
+            <marker date="1505234398756" expanded="true" signature="1244:1331" ph="INSERT INTO groupe... " />
+            <marker date="1505234398756" expanded="true" signature="1743:1772" ph="UPDATE offre... " />
+            <marker date="1505234398756" expanded="true" signature="1743:1805" ph="UPDATE offre... " />
+            <marker date="1505234398756" expanded="true" signature="1743:1845" ph="UPDATE offre... " />
+            <marker date="1505234398756" expanded="true" signature="1743:1890" ph="UPDATE offre... " />
+            <marker date="1505234398756" expanded="true" signature="1743:1906" ph="UPDATE offre... " />
+            <marker date="1505234398756" expanded="true" signature="1946:2039" ph="UPDATE offre... " />
+            <marker date="1505234398756" expanded="true" signature="2096:2116" ph="/*${$requete... " />
+            <marker date="1505234398756" expanded="true" signature="2710:2762" ph="UPDATE offre... " />
+            <marker date="1505234398756" expanded="true" signature="2744:2757" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_offres.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="59" column="49" lean-forward="false" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+        <state relative-caret-position="612">
+          <caret line="83" column="48" lean-forward="false" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/offre.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+        <state relative-caret-position="697">
+          <caret line="117" column="12" lean-forward="false" selection-start-line="117" selection-start-column="12" selection-end-line="117" selection-end-column="12" />
           <folding />
         </state>
       </provider>

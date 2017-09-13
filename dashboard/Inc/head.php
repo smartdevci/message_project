@@ -12,3 +12,47 @@
 <![endif]-->
 <script src="vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 <script src="js/jquery.js"></script>
+
+
+
+<style>
+    .navbar-inner {
+        background-image: linear-gradient(to bottom, #308aca, #308aca);
+        color: #fff;
+    }
+
+    .navbar .nav>li>a {
+        float: none;
+        padding: 10px 15px 10px;
+        color: #fff;
+        text-decoration: none;
+        /*
+                        text-shadow: 0 1px 0 #000000;
+        */
+    }
+
+    .navbar .brand {
+        display: block;
+        float: left;
+        padding: 10px 20px 10px;
+        margin-left: -20px;
+        font-size: 20px;
+        font-weight: 200;
+        color: #fff;
+        text-shadow: 0 1px 0 #fff;
+
+    }
+
+    .muted {
+        color: #fff;
+    }
+
+    .fa-plus-circle:before {
+        content: "\f055";
+        color: #fff;
+    }
+
+    .label-info, .badge-info {
+        background-color: #1b4aad;
+    }
+</style>

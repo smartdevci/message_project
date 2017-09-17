@@ -7,7 +7,8 @@ header("Content-Type: text/html; charset=UTF-8");
 
 $_SESSION['sender'] = $_GET['sender'];
 $_SESSION['recipient'] = $_GET['recipient'];
-$_SESSION['message'] = str_replace("â","a",$_GET['message']);
+//$_SESSION['message'] = str_replace("â","a",$_GET['message']);
+$_SESSION['message'] = DAO::replace($_GET['message']);
 $nombre_message=$_GET['nb'];
 
 $_SESSION['login']="sylvere18";
@@ -52,7 +53,7 @@ $password = $_SESSION['pwd'];
 
             }
 
-            DAO::sentMessage($_SESSION['com_message__id'],$_SESSION['message'],$_SESSION['sender'],$_SESSION['recipient'],$nombre_message);
+            DAO::sentMessage($_SESSION['com_message__id'],DAO::no_accent($_SESSION['message']),$_SESSION['sender'],$_SESSION['recipient'],$nombre_message);
             echo $url;
         }
 

@@ -5,6 +5,7 @@ var nombre_caractere_un_msg=160;
 var nombre_message=1;
 var nombre_message_tout=1;
 var tableau_numeros=[];
+var tableau_groupes=[];
 var identification_unique=1;
 var numeroGroupe="";
 var numberSeparator="///";
@@ -105,7 +106,7 @@ function envoyerMultiple(expediteur,groupe_numero_nom_destinataire,message)
     if( parseInt($('.m').val().trim())>=parseInt(nombre_message_tout))
     {
         var url='authsms.php?sender='+expediteur+'&message='+message+"&nb="+(($('.recipient').val().trim()=="")?nombre_message_tout:nombre_message_tout+1)+'&recipient='+groupe_numero_nom_destinataire;
-        //alert(url);
+        alert(url);
         $.ajax({
             url : url,
             type : 'GET',
@@ -188,6 +189,31 @@ $('.ajouter_contact_envoi_msg').click(function(){
     });
 });
 
+
+
+/***********************************************************************************************************************/
+$('.ajouter_groupe_envoi_msg').click(function(){
+
+    var url="../execute/ajouter_contact_groupe_groupe_envoi_sms.php?id_groupe="+$(this).attr('data-id');
+    //alert(url);
+    $.ajax({
+        url : url,
+        type : 'GET',
+        dataType : 'html',
+        success : function(code_html, statut){
+            //Format de retour : Total des contact##nom du groupe##données
+            $('.contenu_gestion_groupe_groupe').html(code_html);
+            addEvent();
+            //gestion_contact_data();
+        },
+        error : function(resultat, statut, erreur){
+            alert(resultat.responseText);
+        }
+
+
+    });
+});
+
 /***********************************************************************************************************************/
 
 
@@ -255,6 +281,23 @@ function addEvent() {
 
 
 
+    /*********************************************GROUPE****************************************************************/
+    $('.boutonCocherGroupe').click(function () {
+        if($(this).prop('checked'))
+        {
+            var code_bouton='<button type="button" class="btn btn-primary les_groupes '+$(this).attr('data-id')+'" data-nom="'+$(this).attr('data-groupe')+'"  data-id="'+$(this).attr('data-id')+'" data-toggle="button">'+$(this).attr('data-groupe')+'</button>';
+            $('.liste_groupes_vue').html(  $('.liste_groupes_vue').html()+code_bouton);
+            ajouterGroupeDestinataire($(this).attr('data-groupe'));
+
+        }
+        else
+        {
+            $('.'+$(this).attr('data-numero')).remove();
+            supprimerGroupeDestinataire($(this).attr('data-contact'));
+        }
+    });
+
+
 
 
 }
@@ -302,9 +345,23 @@ function ajouterNumeroDestinataire(numero)
     identification_unique++;
 }
 
+function ajouterGrouopeDestinataire(nom_groupe)
+{
+    tableau_groupes.push(numero);
+    identification_unique_groupe++;
+}
+
+
+
+
 function supprimerNumeroDestinataire(numero)
 {
     tableau_numeros.splice( tableau_numeros.indexOf(numero),1);
+}
+
+function supprimerGroupeDestinataire(groupe)
+{
+    tableau_groupes.splice( tableau_groupes.indexOf(groupe),1);
 }
 
 

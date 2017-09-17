@@ -101,6 +101,35 @@ include_once 'Inc/navbar.php';
                                                     </div>
                                                     <!------------------------------------------------------------------------------------------>
 
+                                                    <div class="row modal fade" role="dialog" id="ajouter_groupe">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                    <h4 class="modal-title"> Selectionner les groupe</h4>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <center class="row">
+                                                                                <p class="contenu_gestion_groupe_groupe">
+
+                                                                                </p>
+                                                                            </center>
+
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default actualiser_page" data-dismiss="modal">Fermer</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!----------------------------------------------------------------------------------------------------------------->
+
 
 
                                                 </div>
@@ -111,6 +140,7 @@ include_once 'Inc/navbar.php';
                                                 <div class="controls">
                                                     <input type="text" id="contacts" list="liste_contact" name="recipient" class="span6 recipient"  placeholder="Saisir le nom ou numero et appuyer sur Entrer"  >
                                                     <span data-toggle="modal" data-target="#ajouter_contact" class="voir_groupe ajouter_contact_envoi_msg icon-user" style="cursor: pointer" title="Selectionner des contacts" data-id="1"></span>
+                                                    <span data-toggle="modal" data-target="#ajouter_groupe" class="voir_groupe  ajouter_groupe_envoi_msg  fa fa-group" style="cursor: pointer" title="Selectionner des groupes" data-id="1"></span>
 
                                                     <!-- <input type="button" class="ajouter_numero" value="Ajouter un contact" title="Ajouter à partir des contacts" />
                                                     <input type="button" class="hidden" value="Ajouter numero" title="Ajouter à partir des contacts" />-->
@@ -119,8 +149,17 @@ include_once 'Inc/navbar.php';
                                                         <button type="button" class="btn btn-primary texte_a_afficher les_contacts" data-nom="" data-toggle="button">Single toggle..</button>
                                                     </div>
 
-                                                    <div class="liste_contacts_vue">
-                                                        <!--LES NUMERO SONT VUE ICI -->
+                                                    <div>
+
+                                                        <div class="liste_contacts_vue">
+                                                            <!--LES NUMERO SONT VUE ICI -->
+                                                        </div>
+
+                                                        <div class="liste_groupes_vue">
+                                                            <!--LES GROUPES SONT VUE ICI -->
+                                                        </div>
+
+
                                                     </div>
 
                                                     <datalist id="liste_contact" class="liste_des_contact">

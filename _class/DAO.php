@@ -303,11 +303,26 @@ class DAO
         $replacement_chaine = array("e", "e", "e", "e", "c", "a", "a", "i", "i", "u", "o", " ");
         $nouvelle_chaine = preg_replace($pattern, $replacement_chaine, $chaine);
         return $nouvelle_chaine;
+
+        str_replace("â","a",$_GET['message']);
 }
 
 
 
+    public static function replace($chaine) {
+        $pattern = array("é", "è", "ê", "ë", "ç", "à", "â", "î", "ï", "ù", "ô");
+        $replacement_chaine = array("e", "e", "e", "e", "c", "a", "a", "i", "i", "u", "o");
 
+        for($i=0;$i<sizeof($pattern);$i++)
+        {
+            $chaine=str_replace($pattern[$i],$replacement_chaine[$i],$chaine);
+        }
+        //$nouvelle_chaine = preg_replace($pattern, $replacement_chaine, $chaine);
+        return $chaine;
+    }
+
+
+//  éèêëçàâîïùô
 
 
 }

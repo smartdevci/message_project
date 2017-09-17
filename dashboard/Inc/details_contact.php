@@ -56,6 +56,7 @@
                 </div>
             </div>
             <div class="navbar navbar-inner block-header">
+
                 <div class="muted pull-left nom_groupe titre_recherche">Tous les contact</div>
                 <div class="pull-right "><input type="search" placeholder="Rechercher" class="recherche_contact"/></span>
 
@@ -219,7 +220,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Gerer les contact du groupe <?php echo $groupe['nom_groupe'] ?></h4>
+                                    <h4 class="modal-title">Gerer les contact du groupe <?php echo (sizeof($liste_groupe)!=0)?$groupe['nom_groupe']:"" ?></h4>
                                 </div>
                                 <div class="modal-body">
                                     <div class="row">

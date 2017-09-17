@@ -5,17 +5,29 @@ require_once '../_class/all_class.php';
 
 header("Content-Type: text/html; charset=UTF-8");
 
+$liste_numero=array();
+//var_dump($liste_numero);
+
 $_SESSION['sender'] = $_GET['sender'];
 $_SESSION['recipient'] = $_GET['recipient'];
+$_SESSION['groupe']=$_GET['groupe'];
 //$_SESSION['message'] = str_replace("â","a",$_GET['message']);
 $_SESSION['message'] = DAO::replace($_GET['message']);
 $nombre_message=$_GET['nb'];
+$nombre_message=DAO::getNumberMsg($_GET['message']);
+
+
+//echo $nombre_message;
 
 $_SESSION['login']="sylvere18";
 $_SESSION['pwd']="web43947";
 
 //DEFINITION DES VARIABLES
 $numeros=explode("///",$_SESSION['recipient']);
+$numeros_groupes=DAO::getNumberFromGroup($_SESSION['groupe']);
+
+
+
 
 
 $login = $_SESSION['login'];
@@ -44,17 +56,34 @@ $password = $_SESSION['pwd'];
             {
                 if(!empty($numeros[$i]))
                 {
-                    if($i!=0)
-                    {
-                        $url.="///";
-                    }
-                    $url.="https://1s2u.com/sms/sendsms/sendsms.asp?username=" . $login . "&password=" .$password. "&mt=" .$msgType. "&fl=" .$flash. "&sid=" .$sender. "&mno=" .DAO::getNumberReturn($numeros[$i]). "&ipcl=" .$ip. "&msg=" .$message;
+                    array_push($liste_numero,DAO::getNumberReturn($numeros[$i]));
                 }
 
             }
 
-            DAO::sentMessage($_SESSION['com_message__id'],DAO::no_accent($_SESSION['message']),$_SESSION['sender'],$_SESSION['recipient'],$nombre_message);
+
+
+            $tout_numero=Fonctions::mergeNotDuplicate($liste_numero,$numeros_groupes);
+           // $nombre_message=str_len($_SESSION['message'])
+
+            foreach ($tout_numero as $numero_final)
+            {
+                if(!empty($numero_final))
+                {
+                    $url.="///https://1s2u.com/sms/sendsms/sendsms.asp?username=" . $login . "&password=" .$password. "&mt=" .$msgType. "&fl=" .$flash. "&sid=" .$sender. "&mno=" .$numero_final. "&ipcl=" .$ip. "&msg=" .$message;
+                    DAO::sentMessage($_SESSION['com_message__id'],DAO::no_accent($_SESSION['message']),$_SESSION['sender'],$numero_final,$nombre_message);
+
+                    //echo "<br/> id : ".$_SESSION['com_message__id']." msg : ".DAO::no_accent($_SESSION['message'])." sender : ".$_SESSION['sender']." numero : ".$numero_final." nombre msg = ".$nombre_message;
+                }
+
+            }
+
+
+           /* echo "Tout  ";
+            var_dump($tout_numero);*/
             echo $url;
+
+
         }
 
     }

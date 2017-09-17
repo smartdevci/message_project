@@ -8,6 +8,7 @@ var tableau_numeros=[];
 var tableau_groupes=[];
 var identification_unique=1;
 var numeroGroupe="";
+var groupeGroupe="";
 var numberSeparator="///";
 updateNumbermsg();
 
@@ -64,6 +65,8 @@ $('.bouton_envoyer_message').click(function(){
     if( parseInt($('.m').val().trim())>=parseInt(nombre_message)) {
 
         grouperNumeros();
+        grouperGroupes();
+        //alert(groupeGroupe);
         var message = $('.message_sms').val();
         envoyerMultiple(nom_expediteur, numeroGroupe, message);
 
@@ -94,10 +97,22 @@ function grouperNumeros()
         numeroGroupe=numeroGroupe+numberSeparator+tableau_numeros[i];
     }
 }
+
+/***********************************************************************************************************************/
+function grouperGroupes()
+{
+
+    //alert('taille groupe '+tableau_groupes)
+    for( var i=0;i<tableau_groupes.length;i++)
+    {
+        groupeGroupe=groupeGroupe+numberSeparator+tableau_groupes[i];
+    }
+}
 /***********************************************************************************************************************/
 
 function envoyerMultiple(expediteur,groupe_numero_nom_destinataire,message)
 {
+    //alert(groupeGroupe);
     nombre_caractere=$('.message_sms').val().length;
     nombre_message=parseInt(nombre_caractere/nombre_caractere_un_msg)+1;
     nombre_message=nombre_message*tableau_numeros.length;
@@ -105,8 +120,8 @@ function envoyerMultiple(expediteur,groupe_numero_nom_destinataire,message)
 
     if( parseInt($('.m').val().trim())>=parseInt(nombre_message_tout))
     {
-        var url='authsms.php?sender='+expediteur+'&message='+message+"&nb="+(($('.recipient').val().trim()=="")?nombre_message_tout:nombre_message_tout+1)+'&recipient='+groupe_numero_nom_destinataire;
-        alert(url);
+        var url='authsms.php?sender='+expediteur+'&message='+message+"&nb="+(($('.recipient').val().trim()=="")?nombre_message_tout:nombre_message_tout+1)+'&recipient='+groupe_numero_nom_destinataire+'&groupe='+groupeGroupe;
+
         $.ajax({
             url : url,
             type : 'GET',
@@ -122,6 +137,7 @@ function envoyerMultiple(expediteur,groupe_numero_nom_destinataire,message)
                     {
                         if(reponses[j].trim()!="")
                         {
+
                             $.ajax({
                                 url : reponses[j],
                                 type : 'GET',
@@ -230,8 +246,12 @@ function addEvent() {
 
     $('.selectionner_tout_contact').click(function () {
 
+
+
         if($(this).prop('checked')==true)
         {
+            $('.liste_contacts_vue').html('');
+            tableau_numeros=[];
             $('.boutonCocher').prop('checked',$('.selectionner_tout_contact').prop('checked') );
             $('.status_contact').html('Deselectionner');
 
@@ -283,17 +303,21 @@ function addEvent() {
 
     /*********************************************GROUPE****************************************************************/
     $('.boutonCocherGroupe').click(function () {
+
+        var groupe_id=$(this).attr('data-id');
+
         if($(this).prop('checked'))
         {
+            //$('.test').html('checked');
             var code_bouton='<button type="button" class="btn btn-primary les_groupes '+$(this).attr('data-id')+'" data-nom="'+$(this).attr('data-groupe')+'"  data-id="'+$(this).attr('data-id')+'" data-toggle="button">'+$(this).attr('data-groupe')+'</button>';
             $('.liste_groupes_vue').html(  $('.liste_groupes_vue').html()+code_bouton);
-            ajouterGroupeDestinataire($(this).attr('data-groupe'));
+            ajouterGroupeDestinataire(groupe_id);
 
         }
         else
         {
-            $('.'+$(this).attr('data-numero')).remove();
-            supprimerGroupeDestinataire($(this).attr('data-contact'));
+            $('.'+$(this).attr('data-id')).remove();
+            supprimerGroupeDestinataire(groupe_id);
         }
     });
 
@@ -345,11 +369,18 @@ function ajouterNumeroDestinataire(numero)
     identification_unique++;
 }
 
+function ajouterGroupeDestinataire(groupe_id)
+{
+    tableau_groupes.push(groupe_id);
+    identification_groupe_unique++
+}
+
+/*
 function ajouterGrouopeDestinataire(nom_groupe)
 {
     tableau_groupes.push(numero);
     identification_unique_groupe++;
-}
+}*/
 
 
 
@@ -359,9 +390,9 @@ function supprimerNumeroDestinataire(numero)
     tableau_numeros.splice( tableau_numeros.indexOf(numero),1);
 }
 
-function supprimerGroupeDestinataire(groupe)
+function supprimerGroupeDestinataire(groupe_id)
 {
-    tableau_groupes.splice( tableau_groupes.indexOf(groupe),1);
+    tableau_groupes.splice( tableau_groupes.indexOf(groupe_id),1);
 }
 
 

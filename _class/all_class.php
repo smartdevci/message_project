@@ -12,6 +12,6 @@ require_once 'Groupe.php';
 require_once 'Message.php';
 require_once 'User.php';
 require_once 'Offre.php';
-
+require_once 'Fonctions.php';
 
 ?>

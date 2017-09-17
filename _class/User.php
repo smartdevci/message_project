@@ -205,10 +205,11 @@ class User
         $requete=$connexion->prepare("
             (SELECT g.nom_groupe,g.id_groupe,COUNT(*) as nombre FROM contact_groupe cg, groupe g WHERE cg.id_groupe=g.id_groupe AND id_user=:id_user GROUP BY cg.id_groupe)
             UNION
-            (SELECT nom_groupe,id_groupe, 0 as nombre FROM groupe WHERE id_groupe NOT IN (SELECT id_groupe FROM contact_groupe))
+            (SELECT nom_groupe,id_groupe, 0 as nombre FROM groupe WHERE id_user=:id_user2 AND id_groupe NOT IN (SELECT id_groupe FROM contact_groupe))
             
             ");
         $requete->bindValue(':id_user',$this->getId());
+        $requete->bindValue(':id_user2',$this->getId());
         $requete->execute();
         return $requete->fetchAll();
     }

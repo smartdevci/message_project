@@ -6,7 +6,7 @@ $('.valider_souscription').click(function(){
 
         var url="../execute/valider_rechargement.php?id_rechargement="+$(this).attr('data-id')+"&quantite="+$(this).attr('data-pack');
 
-        alert(url);
+        //alert(url);
         window.location=url;
         /* $.ajax({
             url : url,

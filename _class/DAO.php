@@ -19,6 +19,8 @@ class DAO
     private static  $user=Server::user;
     private static  $password=Server::password;
 
+    public static $number_charactere_per_message=160;
+
 
 
 
@@ -78,7 +80,9 @@ class DAO
 
     public static function sentMessage($id_user,$contenu,$expediteur_nom,$destinataire,$nombre_message)
     {
-
+        /**
+         * Enregistrement du message
+         */
         $connexion=DAO::getConnection();
         $requete=$connexion->prepare("
             INSERT INTO message(contenu, nombre_message, expediteur_nom, destinataire_numero, id_user) 
@@ -292,6 +296,59 @@ class DAO
             }
 
         }
+    }
+
+
+
+
+    public static function getNumberMsg($message)
+    {
+
+        $nombre_lettre_msg=strlen($message);
+        $nombre=0;
+
+        $nombre=intval($nombre_lettre_msg/DAO::$number_charactere_per_message);
+        $reste=$nombre_lettre_msg%DAO::$number_charactere_per_message;
+
+        if($reste!=0)
+        {
+            $nombre++;
+        }
+        return $nombre;
+    }
+
+
+    public static function getNumberFromGroup($group_idOfGroup)
+    {
+        // $group_idOfGroup : ///id_groupe1///id_groupe2///...///id_groupeN
+        $contacts="";
+
+        $connexion=DAO::getConnection();
+        $groupes=explode("///",$group_idOfGroup);
+        foreach ($groupes as $groupe_id)
+        {
+            if(!empty(trim($groupe_id)))
+            {
+                $query=$connexion->prepare("SELECT numero FROM contact WHERE id_contact IN(SELECT id_contact FROM contact_groupe WHERE id_groupe=:id_groupe)");
+                $query->bindValue(':id_groupe',$groupe_id);
+                $query->execute();
+
+                while($reponse=$query->fetch())
+                {
+                    $contacts.="///".$reponse['numero'];
+                }
+
+
+                //echo $query->rowCount()."  ";
+            }
+
+        }
+
+        //echo $contacts;
+
+
+
+        return explode("///",$contacts);
     }
 
 

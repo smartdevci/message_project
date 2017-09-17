@@ -73,7 +73,7 @@ $('.bouton_register_user').click(function(){
 
 
             var url="execute/register_user.php?name="+nom+"&email="+email+"&username="+username+"&password="+pwd+"&expediteur="+name_messenger;
-            alert(url);
+            //alert(url);
             $.ajax({
                 url : url,
                 type : 'GET',

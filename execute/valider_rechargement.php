@@ -13,8 +13,9 @@ $nombre_sms=$_GET['quantite'];
 
 
 DAO::validerTransaction($id_rechargement,$nombre_sms);
-header("Location : ../dashboard/rechargera.php");
-exit;
+header('Location: http:./../dashboard/rechargera.php');
+
+//exit;
 
 ?>
 

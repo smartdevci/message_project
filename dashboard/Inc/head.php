@@ -53,6 +53,69 @@
     }
 
     .label-info, .badge-info {
-        background-color: #1b4aad;
+        background-color: #2983ad;
+    }
+
+    .offre td{
+        text-align: center;
+        margin: 10px 0;
+        padding: 15px 0;
+    }
+
+    td.nbsms{
+        color: #af3400;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .cmd,
+    .cmd a{
+        width: 100%;
+        margin: auto;
+        color: #fff;
+        font-size: 22px;
+        padding: 15px 27%;
+        background-color: #0c9e19;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .cmd a:hover{
+        text-align: center;
+        text-decoration: none;
+        background-color: #177200;
+        width: 100%;
+        margin: auto;
+        color: #fff;
+        font-size: 22px;
+        padding: 15px 27%;
+        font-weight: 600
+    }
+
+    .cmd {
+        width: 100%;
+        margin: auto;
+        color: #fff;
+        font-size: 22px;
+        padding: 15px 27%;
+        background-color: #0c9e19;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .cmd:hover{
+        text-align: center;
+        text-decoration: none;
+        background-color: #177200;
+        width: 100%;
+        margin: auto;
+        color: #fff;
+        font-size: 22px;
+        padding: 15px 27%;
+        font-weight: 600
+    }
+
+    .block-content .row .span3{
+        margin: 0 12px 50px 12px;
     }
 </style>

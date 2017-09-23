@@ -16,6 +16,7 @@ require_once 'modele/modele_offres.php';
     //  FICHIER CSS ET JS
     require_once 'Inc/head.php';
     ?>
+
 </head>
 
 <body>

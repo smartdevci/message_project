@@ -65,7 +65,7 @@ class DAO
 
 
         $user->type=($reponse['id_type']==1)?'admin':$user->type;
-        $user->setIdentifiant($reponse['identifiant']);
+/*        $user->setIdentifiant($reponse['identifiant']);*/
         $user->setId($reponse['user_id']);
 
 
@@ -144,7 +144,7 @@ class DAO
     public static function getOffre()
     {
         $connexion=DAO::getConnection();
-        $requete=$connexion->query("SELECT * FROM offres WHERE effacer=0 ORDER BY nom_offre");
+        $requete=$connexion->query("SELECT * FROM offres ORDER BY nombre_sms");
         //$requete->execute();
         return $requete->fetchAll();
     }

@@ -144,7 +144,7 @@ class DAO
     public static function getOffre()
     {
         $connexion=DAO::getConnection();
-        $requete=$connexion->query("SELECT * FROM offres ORDER BY nombre_sms");
+        $requete=$connexion->query("SELECT * FROM offres WHERE effacer=0 ORDER BY nombre_sms ");
         //$requete->execute();
         return $requete->fetchAll();
     }

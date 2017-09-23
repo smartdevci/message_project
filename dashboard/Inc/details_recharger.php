@@ -68,7 +68,7 @@
                                 </tr>
                                 <tr>
                                     <td style="font-size: 16px">
-                                        <?php echo number_format($offre['prix']/$offre['nombre_sms'],0,","," ") ?> Fcfa/SMS
+                                        <?php echo number_format($offre['prix']/$offre['nombre_sms'],2,","," ") ?> Fcfa/SMS
                                     </td>
                                 </tr>
                                 <tr>

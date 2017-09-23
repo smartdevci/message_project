@@ -304,7 +304,7 @@ include_once 'Inc/navbar.php';
                                     </div>
                                     
                                 </fieldset>
-                          </form><
+                          </form>
 
                         </div>
                     </div>

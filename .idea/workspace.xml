@@ -15,7 +15,7 @@
       <file leaf-file-name="envoi_msg.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/envoi_msg.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
+            <state relative-caret-position="21">
               <caret line="213" column="11" lean-forward="false" selection-start-line="213" selection-start-column="6" selection-end-line="213" selection-end-column="11" />
               <folding />
             </state>
@@ -25,7 +25,7 @@
       <file leaf-file-name="Groupe.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_class/Groupe.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="664">
+            <state relative-caret-position="2079">
               <caret line="99" column="5" lean-forward="false" selection-start-line="86" selection-start-column="3" selection-end-line="99" selection-end-column="5" />
               <folding>
                 <marker date="1503663524741" expanded="true" signature="979:1042" ph="INSERT INTO groupe... " />
@@ -40,7 +40,7 @@
       <file leaf-file-name="envoi.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/envoi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="2268">
               <caret line="108" column="133" lean-forward="false" selection-start-line="108" selection-start-column="133" selection-end-line="108" selection-end-column="133" />
               <folding />
             </state>
@@ -60,7 +60,7 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_class/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
+            <state relative-caret-position="4347">
               <caret line="207" column="81" lean-forward="false" selection-start-line="207" selection-start-column="81" selection-end-line="207" selection-end-column="81" />
               <folding>
                 <marker date="1505653962319" expanded="true" signature="2695:2739" ph="SELECT * FRO... contact" />
@@ -90,7 +90,7 @@
       <file leaf-file-name="DAO.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_class/DAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
+            <state relative-caret-position="6531">
               <caret line="316" column="23" lean-forward="false" selection-start-line="316" selection-start-column="23" selection-end-line="316" selection-end-column="23" />
               <folding>
                 <marker date="1505678252382" expanded="true" signature="1072:1114" ph="SELECT * FRO... users" />
@@ -125,7 +125,7 @@
       <file leaf-file-name="authsms.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/authsms.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
+            <state relative-caret-position="1722">
               <caret line="82" column="35" lean-forward="false" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="37" />
               <folding />
             </state>
@@ -155,7 +155,7 @@
       <file leaf-file-name="details_contact.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-305">
+            <state relative-caret-position="4011">
               <caret line="191" column="53" lean-forward="false" selection-start-line="191" selection-start-column="53" selection-end-line="191" selection-end-column="53" />
               <folding />
             </state>
@@ -299,8 +299,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -499,11 +499,12 @@
       <workItem from="1505147326355" duration="9229000" />
       <workItem from="1505204930131" duration="18644000" />
       <workItem from="1505631820459" duration="24030000" />
+      <workItem from="1505840248682" duration="7000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="322408000" />
+    <option name="totallyTimeSpent" value="322415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -617,7 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2159">
           <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -649,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
           <caret line="102" column="85" lean-forward="false" selection-start-line="102" selection-start-column="85" selection-end-line="102" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -688,7 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -703,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -711,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -778,7 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="83" column="48" lean-forward="false" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -794,7 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -802,7 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8022">
           <caret line="382" column="55" lean-forward="true" selection-start-line="382" selection-start-column="55" selection-end-line="382" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -818,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="75" column="14" lean-forward="false" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -826,7 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -850,13 +840,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/envoi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="2268">
           <caret line="108" column="133" lean-forward="false" selection-start-line="108" selection-start-column="133" selection-end-line="108" selection-end-column="133" />
           <folding />
         </state>
@@ -864,7 +853,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-305">
+        <state relative-caret-position="4011">
           <caret line="191" column="53" lean-forward="false" selection-start-line="191" selection-start-column="53" selection-end-line="191" selection-end-column="53" />
           <folding />
         </state>
@@ -880,7 +869,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_class/Groupe.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
+        <state relative-caret-position="2079">
           <caret line="99" column="5" lean-forward="false" selection-start-line="86" selection-start-column="3" selection-end-line="99" selection-end-column="5" />
           <folding>
             <marker date="1503663524741" expanded="true" signature="979:1042" ph="INSERT INTO groupe... " />
@@ -893,7 +882,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_class/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
+        <state relative-caret-position="4347">
           <caret line="207" column="81" lean-forward="false" selection-start-line="207" selection-start-column="81" selection-end-line="207" selection-end-column="81" />
           <folding>
             <marker date="1505653962319" expanded="true" signature="2695:2739" ph="SELECT * FRO... contact" />
@@ -919,22 +908,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_class/Function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="18" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_class/Fonction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/_class/Function.php" />
+    <entry file="file://$PROJECT_DIR$/_class/Fonction.php" />
     <entry file="file://$PROJECT_DIR$/_class/all_class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -953,7 +928,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_class/DAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
+        <state relative-caret-position="6531">
           <caret line="316" column="23" lean-forward="false" selection-start-line="316" selection-start-column="23" selection-end-line="316" selection-end-column="23" />
           <folding>
             <marker date="1505678252382" expanded="true" signature="1072:1114" ph="SELECT * FRO... users" />
@@ -986,7 +961,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/authsms.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
+        <state relative-caret-position="1722">
           <caret line="82" column="35" lean-forward="false" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="37" />
           <folding />
         </state>
@@ -994,7 +969,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/envoi_msg.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
+        <state relative-caret-position="21">
           <caret line="213" column="11" lean-forward="false" selection-start-line="213" selection-start-column="6" selection-end-line="213" selection-end-column="11" />
           <folding />
         </state>

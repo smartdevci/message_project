@@ -138,9 +138,9 @@ include_once 'Inc/navbar.php';
                                             <div class="control-group">
                                                 <label class="control-label" for="date01">No Destinataire(s)</label>
                                                 <div class="controls">
-                                                    <input type="text" id="contacts" list="liste_contact" name="recipient" class="span6 recipient"  placeholder="Saisir le nom ou numero et appuyer sur Entrer"  >
-                                                    <span data-toggle="modal" data-target="#ajouter_contact" class="voir_groupe ajouter_contact_envoi_msg icon-user" style="cursor: pointer" title="Selectionner des contacts" data-id="1"></span>
-                                                    <span data-toggle="modal" data-target="#ajouter_groupe" class="voir_groupe  ajouter_groupe_envoi_msg  fa fa-group" style="cursor: pointer" title="Selectionner des groupes" data-id="1"></span>
+                                                    <input type="text" id="contacts" list="liste_contact" name="recipient" class="span6 recipient"  placeholder="Saisir le nom ou numero et appuyer sur Entrer"  >&emsp;
+                                                    <span data-toggle="modal" data-target="#ajouter_contact" class="voir_groupe ajouter_contact_envoi_msg fa fa-user fa-2x" style="cursor: pointer; " title="Selectionner des contacts" data-id="1"></span>&emsp;
+                                                    <span data-toggle="modal" data-target="#ajouter_groupe" class="voir_groupe  ajouter_groupe_envoi_msg  fa fa-users fa-2x" style="cursor: pointer; font-size: 1.8em;" title="Selectionner des groupes" data-id="1"></span>
 
                                                     <!-- <input type="button" class="ajouter_numero" value="Ajouter un contact" title="Ajouter à partir des contacts" />
                                                     <input type="button" class="hidden" value="Ajouter numero" title="Ajouter à partir des contacts" />-->
@@ -304,7 +304,7 @@ include_once 'Inc/navbar.php';
                                     </div>
                                     
                                 </fieldset>
-                          </form><
+                          </form>
 
                         </div>
                     </div>

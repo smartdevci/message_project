@@ -39,7 +39,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default bouton_add_groupe" data-dismiss="modal" " >VALIDER</button>
+                            <button type="button" class="btn btn-default bouton_add_groupe" data-dismiss="modal">VALIDER</button>
                             <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                         <th>E-mail</th>
                         <th>Offres</th>
                         <th>Prix</th>
-                        <th></th>
+                        <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -98,13 +98,14 @@
                             </td>
 
                             <td>
-                                <span
-
-                                        class="icon-arrow-right valider_souscription"
-                                        style="cursor: pointer" title="Valider souscription"
-                                        data-id="<?php echo $souscription_en_cours['id_rechargement'] ?>"
-                                        data-pack="<?php echo $souscription_en_cours['nombre_sms'] ?>"
-                                ></span>
+                                <button class="btn btn-success">
+                                    <span
+                                            class="valider_souscription"
+                                            style="cursor: pointer" title="Valider souscription"
+                                            data-id="<?php echo $souscription_en_cours['id_rechargement'] ?>"
+                                            data-pack="<?php echo $souscription_en_cours['nombre_sms'] ?>"
+                                    > Valider</span>
+                                </button>
                             </td>
 
                         </tr>

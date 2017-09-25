@@ -15,7 +15,7 @@
       <file leaf-file-name="envoi_msg.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/envoi_msg.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
+            <state relative-caret-position="4473">
               <caret line="213" column="11" lean-forward="false" selection-start-line="213" selection-start-column="6" selection-end-line="213" selection-end-column="11" />
               <folding />
             </state>
@@ -55,7 +55,7 @@
       <file leaf-file-name="DAO.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_class/DAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
+            <state relative-caret-position="2961">
               <caret line="146" column="73" lean-forward="false" selection-start-line="146" selection-start-column="73" selection-end-line="146" selection-end-column="73" />
               <folding>
                 <marker date="1506207020728" expanded="true" signature="1072:1114" ph="SELECT * FRO... users" />
@@ -398,8 +398,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -530,11 +530,12 @@
       <workItem from="1505631820459" duration="24030000" />
       <workItem from="1505840248682" duration="7000" />
       <workItem from="1506206569560" duration="1051000" />
+      <workItem from="1506328427049" duration="10000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323466000" />
+    <option name="totallyTimeSpent" value="323476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -684,7 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -918,7 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
           <caret line="36" column="160" lean-forward="false" selection-start-line="36" selection-start-column="160" selection-end-line="36" selection-end-column="160" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,7 +990,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/envoi_msg.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
+        <state relative-caret-position="4473">
           <caret line="213" column="11" lean-forward="false" selection-start-line="213" selection-start-column="6" selection-end-line="213" selection-end-column="11" />
           <folding />
         </state>
@@ -1023,7 +1022,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_class/DAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
+        <state relative-caret-position="2961">
           <caret line="146" column="73" lean-forward="false" selection-start-line="146" selection-start-column="73" selection-end-line="146" selection-end-column="73" />
           <folding>
             <marker date="1506207020728" expanded="true" signature="1072:1114" ph="SELECT * FRO... users" />

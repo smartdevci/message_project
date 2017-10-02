@@ -13,14 +13,18 @@ class Offre
     public $name;
     public $price;
     public $number_msg;
+    public $validate_nbre_jour;
 
 
-    public function __construct($name,$price,$number_msg)
+    public function __construct($name,$price,$number_msg,$nb_jr)
     {
         $this->id=0;
         $this->name=$name;
         $this->price=$price;
         $this->number_msg=$number_msg;
+        $this->validate_nbre_jour=$nb_jr;
+
+        //echo "ici ".$name."/".$price."/".$number_msg."/".$this->validate_nbre_jour."/////////////";
 
     }
 
@@ -48,6 +52,11 @@ class Offre
         $this->number_msg=$number;
     }
 
+    public function setValidateJour($number_of_jour)
+    {
+        $this->validate_nbre_jour=$number_of_jour;
+    }
+
 
     /************GETTER****************/
     public function getId()
@@ -72,14 +81,25 @@ class Offre
     }
 
 
+    public function getValidateJour()
+    {
+        $this->validate_nbre_jour;
+    }
+
+
+
     /************FUNCTIONS******************/
     public function register()
     {
         $connexion=DAO::getConnection();
-        $requete=$connexion->prepare("INSERT INTO offres(nom_offre, nombre_sms, prix) VALUES (:nom_offre, :nombre_sms, :prix)");
+        //echo $this->getValidateJour();
+        $url="INSERT INTO offres(nom_offre, nombre_sms, validate_nbre_jour, prix) VALUES (:nom_offre, :nombre_sms, :validate_nbre_jour, :prix)";
+        //echo $url;
+        $requete=$connexion->prepare($url);
         $requete->bindValue(":nom_offre",$this->getName(),PDO::PARAM_STR);
         $requete->bindValue(":nombre_sms",$this->getNumberMsg(),PDO::PARAM_INT);
         $requete->bindValue(":prix",$this->getPrice(),PDO::PARAM_INT);
+        $requete->bindValue(":validate_nbre_jour",$this->validate_nbre_jour,PDO::PARAM_INT);
         $requete->execute();
         $this->setId($connexion->lastInsertId());
     }
@@ -97,11 +117,11 @@ class Offre
         $requete->bindValue(":price",$this->getPrice(),PDO::PARAM_INT);
         $requete->bindValue(":id_offre",$this->getId(),PDO::PARAM_INT);
         var_dump($requete);
-        $requete->execute();
-        echo $requete->rowCount();
+        //$requete->execute();
+        //echo $requete->rowCount();
 
 
-        echo $this->getName()."/".$this->getNumberMsg()."/".$this->getPrice()."/".$this->getId()."/".$query;
+        //echo $this->getName()."/".$this->getNumberMsg()."/".$this->getPrice()."/".$this->getId()."/".$query;
 
     }
 

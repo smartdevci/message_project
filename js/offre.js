@@ -23,8 +23,10 @@ $('.validate_modification_offre').removeClass('hidden');
 
 
 $('.bouton_add_offre').click(function(){
-    var url="../execute/add_offre.php?nom_offre="+$('.nom_offre_ajouter').val().trim()+"&nombre_sms="+$('.nombre_sms_ajouter').val().trim()+"&prix="+$('.prix_ajouter').val().trim();
-    //alert(url);
+    alert('ok');
+    var url="../execute/add_offre.php?nom_offre="+$('.nom_offre_ajouter').val().trim()+"&nombre_sms="+$('.nombre_sms_ajouter').val().trim()+"&prix="+$('.prix_ajouter').val().trim()+"&delai="+$('.delai_ajouter').val();
+    alert(url);
+
     $.ajax({
         url : url,
         type : 'GET',

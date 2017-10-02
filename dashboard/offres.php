@@ -42,7 +42,7 @@ include_once 'Inc/navbar.php';
             //            include_once 'Inc/stats.php';
 
             // DETAILS SMS ENVOYES
-                        include_once 'Inc/details_offres.php';
+                        include_once 'Inc/details_offres.php' ;
             ?>
 
         </div>

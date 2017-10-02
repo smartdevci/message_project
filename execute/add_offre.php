@@ -6,12 +6,24 @@
  * Time: 13:25
  */
 session_start();
-var_dump($_SESSION);
+//var_dump($_SESSION);
 require_once '../_class/all_class.php';
 $nom_offre=$_GET['nom_offre'];
 $nombre_sms=$_GET['nombre_sms'];
 $prix=$_GET['prix'];
-$offre=new Offre($nom_offre,$prix,$nombre_sms);
+$delai_jour=$_GET['delai'];
+
+$offre=new Offre($nom_offre,$prix,$nombre_sms,$delai_jour);
+/*echo "no : ".$offre->validate_nbre_jour."===/".$offre->getValidateJour()."/===";
+echo "ouiiiiiiiiiiiiii";
+echo "/".$offre->getName()."/";
+echo "/".$offre->getPrice()."/";
+echo "/".$offre->getNumberMsg()."/";
+echo "/".$offre->validate_nbre_jour."/";
+echo "/".$offre->getId()."/";
+
+var_dump($offre);
+*/
 $offre->register();
 
 ?>

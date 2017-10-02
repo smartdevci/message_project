@@ -31,6 +31,8 @@
                                         <input class="nombre_sms_ajouter" type="text" name="nombre_sms" placeholder="Nombre SMS" />
                                         <br/>
                                         <input class="prix_ajouter" type="text" name="prix" placeholder="Prix" />
+                                        <br/>
+                                        <input class="delai_ajouter" type="number" value="1" name="delai" placeholder="Delai (nombre de jours)" />
                                     </center>
 
 

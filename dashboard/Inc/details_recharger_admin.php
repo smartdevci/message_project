@@ -98,13 +98,14 @@
                             </td>
 
                             <td>
-                                <button class="btn btn-success">
-                                    <span
-                                            class="valider_souscription"
-                                            style="cursor: pointer" title="Valider souscription"
-                                            data-id="<?php echo $souscription_en_cours['id_rechargement'] ?>"
-                                            data-pack="<?php echo $souscription_en_cours['nombre_sms'] ?>"
-                                    > Valider</span>
+                                <button
+                                        class="btn btn-success valider_souscription"
+                                        title="Valider souscription"
+                                        style="cursor: pointer"
+                                        data-id="<?php echo $souscription_en_cours['id_rechargement'] ?>"
+                                        data-pack="<?php echo $souscription_en_cours['nombre_sms'] ?>"
+                                >
+                                    <span> Valider</span>
                                 </button>
                             </td>
 

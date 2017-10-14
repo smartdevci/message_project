@@ -14,6 +14,7 @@ class User
     public $username;
     public $name_messenger;
     public $remaining_message;
+    public $date_expiration_message;
     public $email;
     public $type;
     public $identifiant;
@@ -30,6 +31,7 @@ class User
         $this->setEmail($email);
         $this->type='client';
         $this->identifiant="";
+        $this->date_expiration_message="";
     }
 
 

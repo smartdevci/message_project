@@ -89,11 +89,11 @@
                             </tr>
                             <tr>
                                 <td style="font-size: 16px">
-                                    <?php echo number_format($offres['prix']/$offres['nombre_sms'],0,","," ") ?> Fcfa/SMS
+                                    <?php echo number_format($offres['prix']/$offres['nombre_sms'],2,","," ") ?> Fcfa/SMS
                                 </td>
                             </tr>
                             <tr>
-                                <td style="font-size: 16px">Validité : 3 mois</td>
+                                <td style="font-size: 16px">Validité : <?php echo $offres['validate_nbre_jour']." jour".($offres['validate_nbre_jour']>1?"s":"") ?> </td>
                             </tr>
                             <tr>
                                 <td style="font-size: 16px">Couverture internationale</td>

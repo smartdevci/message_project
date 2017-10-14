@@ -49,7 +49,7 @@ class DAO
     public static function getUser($id_user)
     {
         $connexion=DAO::getConnection();
-        $requete=$connexion->prepare("SELECT * FROM users WHERE user_id=:id_user");
+        $requete=$connexion->prepare("SELECT *,DATE_FORMAT(date_fin_validite,'%d/%m/%Y') as date_expiration FROM users WHERE user_id=:id_user");
         $requete->bindValue(':id_user',$id_user,PDO::PARAM_INT);
         $requete->execute();
         $reponse=$requete->fetch();
@@ -67,6 +67,7 @@ class DAO
         $user->type=($reponse['id_type']==1)?'admin':$user->type;
 /*        $user->setIdentifiant($reponse['identifiant']);*/
         $user->setId($reponse['user_id']);
+        $user->date_expiration_message=$reponse['date_expiration'];
 
 
         return $user;

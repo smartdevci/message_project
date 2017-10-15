@@ -78,9 +78,18 @@ $password = $_SESSION['pwd'];
 
             }
 
+            $connexion=DAO::getConnection();
 
-           /* echo "Tout  ";
-            var_dump($tout_numero);*/
+            $requete_expiration=$connexion->prepare("SELECT :dateNowUser > NOW() as expiration");
+            $date_expiration_message=DAO::getExpirationDate($_SESSION['com_message__id']);
+            $requete_expiration->bindValue(':dateNowUser',$date_expiration_message,PDO::PARAM_STR);
+            $requete_expiration->execute();
+            $reponse_expiration=$requete_expiration->fetch();
+
+            echo $reponse_expiration['expiration']==1? "date valid":"date wrong";
+
+
+
             echo $url;
 
 

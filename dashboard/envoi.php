@@ -186,6 +186,7 @@ include_once 'Inc/navbar.php';
                                                     <label style="margin-top: 10px;">Nombre de SMS : <span class="nombre_message"></span> &DoubleLongLeftRightArrow; Nombre de caractères : <span class="nombre_caractere"></span>
                                                     </label>
                                                     <div class="text-danger nombre_message_insuffisant " style="color:red">Le nombre de message que vous disposez est insuffisant pour envoyer ce(s) message(s)</div>
+                                                    <div class="text-danger nombre_message_expiration " style="color:red">Vos messages ont expiré, veuillez recharger votre compte SMS pour envoyer des message(s)</div>
 
                                                 </div>
                                             </div>

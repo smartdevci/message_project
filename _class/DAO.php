@@ -76,6 +76,20 @@ class DAO
 
 
 
+    public static function getExpirationDate($id_user)
+    {
+        $connexion=DAO::getConnection();
+        $requete=$connexion->prepare("SELECT date_fin_validite as date_expiration FROM users WHERE user_id=:id_user");
+        $requete->bindValue(':id_user',$id_user,PDO::PARAM_INT);
+        $requete->execute();
+        $reponse=$requete->fetch();
+
+        return $reponse['date_expiration'];
+
+    }
+
+
+
 
 
 
@@ -110,24 +124,64 @@ class DAO
 
 
 
-
-    public static function validerTransaction($id_rechargement,$nombre_sms)
+    public static function validerTransaction($id_rechargement)
     {
         $connexion=DAO::getConnection();
-        $requete=$connexion->prepare("SELECT * FROM rechargement WHERE id_rechargement=:id_rechargement");
+
+
+        $requete=$connexion->prepare("
+            SELECT * FROM rechargement r, offres o 
+            WHERE r.id_rechargement=:id_rechargement AND r.id_offre=o.id_offre
+            
+        ");
         $requete->bindValue(':id_rechargement',$id_rechargement,PDO::PARAM_INT);
         $requete->execute();
         $reponse=$requete->fetch();
         $id_user=$reponse['id_user'];
+        $nombre_sms=$reponse['nombre_sms'];
+        $validite_nbre_jour=$reponse['validate_nbre_jour'];
+
+        $requete=$connexion->prepare("SELECT DATE_ADD(NOW(),INTERVAL :validate_nbre_jour DAY) as expiration");
+        $requete->bindValue(':validate_nbre_jour',$validite_nbre_jour,PDO::PARAM_INT);
+        $requete->execute();
+        $reponse=$requete->fetch();
+
+
+
+
+        echo "<br/> nombre ligne ".$requete->rowCount();
+        echo "<br/> nombre sms ".$nombre_sms;
+        $expiration_from_today=$reponse['expiration'];  //la date d'expiration que le nouveu rechargement va apporter
+
+        echo "<br/> La date exp Avant ".$validite_nbre_jour;
+        echo "<br/> La date exp Après ".$expiration_from_today;
+
+        $requete_user_date_expiration_now=$connexion->prepare("SELECT date_fin_validite as ladate FROM users WHERE user_id=:id_user");
+        $requete_user_date_expiration_now->bindValue(':id_user',$id_user,PDO::PARAM_INT);
+        $requete_user_date_expiration_now->execute();
+        $response_user_date_expiration_now=$requete_user_date_expiration_now->fetch();
+        $user_date_expiration_now=$response_user_date_expiration_now['ladate'];
+
+        echo "<br/> Ancienne date ".$user_date_expiration_now;
+
+        $date_expiration=DAO::maxDate($expiration_from_today,$user_date_expiration_now);
+        echo "<br/>  date ".$date_expiration;
 
 
         $update=$connexion->prepare("
-            UPDATE users SET remaining_msg=remaining_msg+:nombre WHERE user_id=:id_user
+            UPDATE users SET 
+            remaining_msg=remaining_msg+:nombre, 
+            date_fin_validite=:new_expiration
+            WHERE user_id=:id_user
         ");
 
         $update->bindValue(':nombre',$nombre_sms,PDO::PARAM_INT);
+        $update->bindValue(':new_expiration',$date_expiration,PDO::PARAM_STR);
         $update->bindValue(':id_user',$id_user,PDO::PARAM_INT);
         $update->execute();
+
+        echo "<br/> Req update ".$update->rowCount()."/".$id_user;
+
 
 
 
@@ -138,6 +192,22 @@ class DAO
         $update->bindValue(':id_rechargement',$id_rechargement,PDO::PARAM_INT);
         $update->execute();
 
+    }
+
+
+
+
+    public static function  maxDate($date1,$date2)
+    {
+        $connexion=DAO::getConnection();
+        $requete_comparaison=$connexion->prepare("SELECT :date1<:date2 as result");
+        $requete_comparaison->bindValue(':date1',$date1,PDO::PARAM_STR);
+        $requete_comparaison->bindValue(':date2',$date2,PDO::PARAM_STR);
+        $requete_comparaison->execute();
+
+        $reponse_comparaison=$requete_comparaison->fetch();
+
+        return $reponse_comparaison['result']==1?$date2:$date1;
     }
 
 

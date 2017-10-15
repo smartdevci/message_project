@@ -3,6 +3,7 @@ session_start();
 header("Content-Type: text/html; charset=UTF-8");
 
 $_SESSION['page'] = "dashboard";
+//var_dump($_SESSION);
 require_once 'modele/modele_dashboard.php';
 ?>
 

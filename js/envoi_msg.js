@@ -37,6 +37,7 @@ $('nombre_message_insuffisant').removeClass('hidden');
 function hideAll()
 {
     $('.nombre_message_insuffisant').hide();
+    $('.nombre_message_expiration').hide();
 }
 
 
@@ -121,33 +122,44 @@ function envoyerMultiple(expediteur,groupe_numero_nom_destinataire,message)
     if( parseInt($('.m').val().trim())>=parseInt(nombre_message_tout))
     {
         var url='authsms.php?sender='+expediteur+'&message='+message+"&nb="+(($('.recipient').val().trim()=="")?nombre_message_tout:nombre_message_tout+1)+'&recipient='+groupe_numero_nom_destinataire+'&groupe='+groupeGroupe;
-
+        //alert(url);
         $.ajax({
             url : url,
             type : 'GET',
             dataType : 'html',
             success: function(reponse, statut){
+                //alert(reponse);
                 if(reponse=='non')
                 {}
                 else
                 {
                     var reponses=reponse.split("///");
 
-                    for(var j=0;j<reponses.length;j++)
+                    if(reponses[0]=="date wrong")//
                     {
-                        if(reponses[j].trim()!="")
-                        {
-
-                            $.ajax({
-                                url : reponses[j],
-                                type : 'GET',
-                                dataType : 'html',
-                                success: function(retour, statut2){},
-                                error: function(resultat, statut){}
-                            });
-                            //alert('dedan');
-                        }
+                        $('.nombre_message_expiration').show(500);
                     }
+                    else
+                    {
+
+                        for(var j=1;j<reponses.length;j++)
+                        {
+                            if(reponses[j].trim()!="")
+                            {
+
+                                $.ajax({
+                                    url : reponses[j],
+                                    type : 'GET',
+                                    dataType : 'html',
+                                    success: function(retour, statut2){},
+                                    error: function(resultat, statut){}
+                                });
+                                //alert('dedan');
+                            }
+                        }
+
+                    }
+
 
                 }
 

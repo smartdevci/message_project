@@ -12,7 +12,9 @@ $id_rechargement=$_GET['id_rechargement'];
 $nombre_sms=$_GET['quantite'];
 
 
-DAO::validerTransaction($id_rechargement,$nombre_sms);
+//DAO::validerTransaction($id_rechargement,$nombre_sms);
+//echo " id_rechargement : ".$id_rechargement;
+DAO::validerTransaction($id_rechargement);
 header('Location: http:./../dashboard/rechargera.php');
 
 //exit;

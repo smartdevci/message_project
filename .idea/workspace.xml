@@ -60,16 +60,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rechargera.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard/rechargera.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="61" column="29" lean-forward="false" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="rechargera.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/rechargera.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,7 +92,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="envoi_msg.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="details_offres.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_offres.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="95" column="163" lean-forward="false" selection-start-line="95" selection-start-column="71" selection-end-line="95" selection-end-column="163" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="envoi_msg.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/envoi_msg.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
@@ -132,15 +132,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stats.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard/Inc/stats.php">
+      <file leaf-file-name="details_recharger.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_recharger.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="84" lean-forward="false" selection-start-line="8" selection-start-column="84" selection-end-line="8" selection-end-column="84" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="269">
+              <caret line="74" column="130" lean-forward="true" selection-start-line="74" selection-start-column="130" selection-end-line="74" selection-end-column="130" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,7 +154,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>grouperNumeros</find>
       <find>grouperGroupes</find>
       <find>exe</find>
       <find>click</find>
@@ -187,6 +183,7 @@
       <find>envoyerMultiple</find>
       <find>nombre_message_insuffisant</find>
       <find>alert</find>
+      <find>mois</find>
     </findStrings>
     <replaceStrings>
       <replace>offre</replace>
@@ -233,7 +230,6 @@
         <option value="$PROJECT_DIR$/_class/Fonction.php" />
         <option value="$PROJECT_DIR$/_class/all_class.php" />
         <option value="$PROJECT_DIR$/_class/Fonctions.php" />
-        <option value="$PROJECT_DIR$/dashboard/Inc/details_recharger.php" />
         <option value="$PROJECT_DIR$/_class/Server.php" />
         <option value="$PROJECT_DIR$/dashboard/offres.php" />
         <option value="$PROJECT_DIR$/js/offre.js" />
@@ -250,6 +246,7 @@
         <option value="$PROJECT_DIR$/dashboard/authsms.php" />
         <option value="$PROJECT_DIR$/dashboard/envoi.php" />
         <option value="$PROJECT_DIR$/js/envoi_msg.js" />
+        <option value="$PROJECT_DIR$/dashboard/Inc/details_recharger.php" />
       </list>
     </option>
   </component>
@@ -317,7 +314,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="execute" />
+              <option name="myItemId" value="dashboard" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -332,6 +329,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Inc" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -487,12 +488,12 @@
       <workItem from="1506549995368" duration="215000" />
       <workItem from="1506600391363" duration="14000" />
       <workItem from="1506700950995" duration="8926000" />
-      <workItem from="1507953180031" duration="16304000" />
+      <workItem from="1507953180031" duration="16676000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="348935000" />
+    <option name="totallyTimeSpent" value="349307000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1050" extended-state="0" />
@@ -868,22 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_offres.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="95" column="38" lean-forward="false" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_recharger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="70" column="102" lean-forward="false" selection-start-line="70" selection-start-column="102" selection-end-line="70" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/modele/modele_dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1029,6 +1014,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="130" column="18" lean-forward="false" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_offres.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="95" column="163" lean-forward="false" selection-start-line="95" selection-start-column="71" selection-end-line="95" selection-end-column="163" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_recharger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="74" column="130" lean-forward="true" selection-start-line="74" selection-start-column="130" selection-end-line="74" selection-end-column="130" />
           <folding />
         </state>
       </provider>

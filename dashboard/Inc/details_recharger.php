@@ -72,7 +72,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="font-size: 16px">Validité : 3 mois</td>
+                                    <td style="font-size: 16px">Validité : <?php echo $offre['validate_nbre_jour']." jour".($offre['validate_nbre_jour']>1?"s":"") ?></td>
                                 </tr>
                                 <tr>
                                     <td style="font-size: 16px">Couverture internationale</td>

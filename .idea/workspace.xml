@@ -15,7 +15,7 @@
       <file leaf-file-name="DAO.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_class/DAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
+            <state relative-caret-position="1533">
               <caret line="78" column="44" lean-forward="false" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="44" />
               <folding>
                 <marker date="1508053633222" expanded="true" signature="1072:1175" ph="SELECT * FRO... users" />
@@ -48,14 +48,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="details_recharger_admin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_recharger_admin.php">
+      <file leaf-file-name="Server.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_class/Server.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
-              <caret line="106" column="32" lean-forward="false" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="63">
+              <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,7 +130,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="details_recharger.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="details_recharger.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/Inc/details_recharger.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="269">
@@ -178,12 +176,12 @@
       <find>getoff</find>
       <find>valider</find>
       <find>getUser</find>
-      <find>getuser</find>
       <find>SESS</find>
       <find>envoyerMultiple</find>
       <find>nombre_message_insuffisant</find>
       <find>alert</find>
       <find>mois</find>
+      <find>getuser</find>
     </findStrings>
     <replaceStrings>
       <replace>offre</replace>
@@ -230,7 +228,6 @@
         <option value="$PROJECT_DIR$/_class/Fonction.php" />
         <option value="$PROJECT_DIR$/_class/all_class.php" />
         <option value="$PROJECT_DIR$/_class/Fonctions.php" />
-        <option value="$PROJECT_DIR$/_class/Server.php" />
         <option value="$PROJECT_DIR$/dashboard/offres.php" />
         <option value="$PROJECT_DIR$/js/offre.js" />
         <option value="$PROJECT_DIR$/_class/Offre.php" />
@@ -247,6 +244,7 @@
         <option value="$PROJECT_DIR$/dashboard/envoi.php" />
         <option value="$PROJECT_DIR$/js/envoi_msg.js" />
         <option value="$PROJECT_DIR$/dashboard/Inc/details_recharger.php" />
+        <option value="$PROJECT_DIR$/_class/Server.php" />
       </list>
     </option>
   </component>
@@ -488,12 +486,12 @@
       <workItem from="1506549995368" duration="215000" />
       <workItem from="1506600391363" duration="14000" />
       <workItem from="1506700950995" duration="8926000" />
-      <workItem from="1507953180031" duration="16676000" />
+      <workItem from="1507953180031" duration="17025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="349307000" />
+    <option name="totallyTimeSpent" value="349656000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1050" extended-state="0" />
@@ -816,16 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_class/Server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-          <folding>
-            <element signature="e#7#90#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/offres.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
@@ -960,40 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_class/DAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="78" column="44" lean-forward="false" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="44" />
-          <folding>
-            <marker date="1508053633222" expanded="true" signature="1072:1175" ph="SELECT * FRO... users" />
-            <marker date="1508053633222" expanded="true" signature="1963:2040" ph="SELECT *,DAT... users" />
-            <marker date="1508053633222" expanded="true" signature="2495:2682" ph="INSERT INTO message... " />
-            <marker date="1508053633222" expanded="true" signature="3146:3221" ph="UPDATE users... " />
-            <marker date="1508053633222" expanded="true" signature="3572:3664" ph="SELECT * FRO... rechargement" />
-            <marker date="1508053633222" expanded="true" signature="3572:3690" ph="SELECT *,DAT... " />
-            <marker date="1508053633222" expanded="true" signature="4683:4751" ph="SELECT DATE(... " />
-            <marker date="1508053633222" expanded="true" signature="5318:5466" ph="UPDATE users... " />
-            <marker date="1508053633222" expanded="true" signature="5839:5910" ph="UPDATE recha... " />
-            <marker date="1508053633222" expanded="true" signature="6668:6724" ph="SELECT * FRO... offres" />
-            <marker date="1508053633222" expanded="true" signature="6940:7147" ph="SELECT *, DA... rechargement" />
-            <marker date="1508053633222" expanded="true" signature="7330:7538" ph="SELECT *, DA... rechargement" />
-            <marker date="1508053633222" expanded="true" signature="7758:7828" ph="DELETE FROM " />
-            <marker date="1508053633222" expanded="true" signature="7758:7838" ph="DELETE FROM " />
-            <marker date="1508053633222" expanded="true" signature="8200:8281" ph="INSERT INTO contact_groupe... " />
-            <marker date="1508053633222" expanded="true" signature="8212:8269" ph="DELETE FROM " />
-            <marker date="1508053633222" expanded="true" signature="8638:8732" ph="INSERT INTO rechargement... " />
-            <marker date="1508053633222" expanded="true" signature="9170:9184" ph="SELECT * FRO... NTO" />
-            <marker date="1508053633222" expanded="true" signature="9170:9189" ph="SELECT * FRO... conta" />
-            <marker date="1508053633222" expanded="true" signature="9170:9212" ph="SELECT * FRO... contact" />
-            <marker date="1508053633222" expanded="true" signature="9535:9571" ph="SELECT * FRO... contact" />
-            <marker date="1508053633222" expanded="true" signature="10093:10135" ph="SELECT * FRO... contact" />
-            <marker date="1508053633222" expanded="true" signature="10460:10496" ph="SELECT * FRO... contact" />
-            <marker date="1508053633222" expanded="true" signature="11651:11763" ph="SELECT numer... contact" />
-            <marker date="1508053633222" expanded="true" signature="11698:11762" ph="SELECT id_co... contact_groupe" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/authsms.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="536">
@@ -1030,6 +984,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="74" column="130" lean-forward="true" selection-start-line="74" selection-start-column="130" selection-end-line="74" selection-end-column="130" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_class/DAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1533">
+          <caret line="78" column="44" lean-forward="false" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="44" />
+          <folding>
+            <marker date="1508053633222" expanded="true" signature="1072:1175" ph="SELECT * FRO... users" />
+            <marker date="1508053633222" expanded="true" signature="1963:2040" ph="SELECT *,DAT... users" />
+            <marker date="1508053633222" expanded="true" signature="2495:2682" ph="INSERT INTO message... " />
+            <marker date="1508053633222" expanded="true" signature="3146:3221" ph="UPDATE users... " />
+            <marker date="1508053633222" expanded="true" signature="3572:3664" ph="SELECT * FRO... rechargement" />
+            <marker date="1508053633222" expanded="true" signature="3572:3690" ph="SELECT *,DAT... " />
+            <marker date="1508053633222" expanded="true" signature="4683:4751" ph="SELECT DATE(... " />
+            <marker date="1508053633222" expanded="true" signature="5318:5466" ph="UPDATE users... " />
+            <marker date="1508053633222" expanded="true" signature="5839:5910" ph="UPDATE recha... " />
+            <marker date="1508053633222" expanded="true" signature="6668:6724" ph="SELECT * FRO... offres" />
+            <marker date="1508053633222" expanded="true" signature="6940:7147" ph="SELECT *, DA... rechargement" />
+            <marker date="1508053633222" expanded="true" signature="7330:7538" ph="SELECT *, DA... rechargement" />
+            <marker date="1508053633222" expanded="true" signature="7758:7828" ph="DELETE FROM " />
+            <marker date="1508053633222" expanded="true" signature="7758:7838" ph="DELETE FROM " />
+            <marker date="1508053633222" expanded="true" signature="8200:8281" ph="INSERT INTO contact_groupe... " />
+            <marker date="1508053633222" expanded="true" signature="8212:8269" ph="DELETE FROM " />
+            <marker date="1508053633222" expanded="true" signature="8638:8732" ph="INSERT INTO rechargement... " />
+            <marker date="1508053633222" expanded="true" signature="9170:9184" ph="SELECT * FRO... NTO" />
+            <marker date="1508053633222" expanded="true" signature="9170:9189" ph="SELECT * FRO... conta" />
+            <marker date="1508053633222" expanded="true" signature="9170:9212" ph="SELECT * FRO... contact" />
+            <marker date="1508053633222" expanded="true" signature="9535:9571" ph="SELECT * FRO... contact" />
+            <marker date="1508053633222" expanded="true" signature="10093:10135" ph="SELECT * FRO... contact" />
+            <marker date="1508053633222" expanded="true" signature="10460:10496" ph="SELECT * FRO... contact" />
+            <marker date="1508053633222" expanded="true" signature="11651:11763" ph="SELECT numer... contact" />
+            <marker date="1508053633222" expanded="true" signature="11698:11762" ph="SELECT id_co... contact_groupe" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_class/Server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
           <folding />
         </state>
       </provider>

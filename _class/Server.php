@@ -10,18 +10,18 @@
 class Server
 {
     const host="localhost";
-    const database_name="message";
+    const database_name="smart907017";
     const user="root";
     const password="";
 
 }
 
-/*
- class Server
+
+/*  class Server
 {
-    const host="91.216.107.164";
-    const database_name="appsm768963_20nsul";
-    const user="appsm768963";
-    const password="azerty";
+    const host="91.216.107.182";
+    const database_name="smart907017";
+    const user="smart907017";
+    const password="kg3wmktox1";
 
 } */

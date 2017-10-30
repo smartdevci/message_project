@@ -328,7 +328,7 @@ class User
             $requete->bindValue(':email', $this->email, PDO::PARAM_STR);
             $requete->execute();
 
-            //sil'email n'existe pas encore
+            //si l'email n'existe pas encore
             if($requete->rowCount()==0)
             {
 

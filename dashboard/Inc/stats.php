@@ -5,8 +5,8 @@
             <div class="muted pull-left">Statistiques</div>
         </div>
 
-        <div>
-            Date d'expiration message : <?php echo $user->date_expiration_message ?>
+        <div class="alert alert-danger text-center text-uppercase" style="font-weight: bold; font-size: 1.2em; margin: 10px;">
+            SMS valables jusqu'au : <?php echo $user->date_expiration_message ?>
         </div>
 
         <div class="block-content collapse in">

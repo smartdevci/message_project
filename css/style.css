@@ -31,14 +31,19 @@ body{
 
 .navbar-inverse .navbar-nav a:hover{
     color: #f2860c;
-    font-weight: bold;
+    /*font-weight: bold;*/
+}
+
+.navbar-inverse .navbar-nav li a:hover{
+    color: #f2860c;
+    /*font-weight: bold;*/
 }
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
     color: #fff;
     font-size: 1.2em;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 

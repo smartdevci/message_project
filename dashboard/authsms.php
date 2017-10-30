@@ -20,7 +20,7 @@ $nombre_message=DAO::getNumberMsg($_GET['message']);
 //echo $nombre_message;
 
 $_SESSION['login']="sylvere18";
-$_SESSION['pwd']="web43947";
+$_SESSION['pwd']="sylvere18itgate";
 
 //DEFINITION DES VARIABLES
 $numeros=explode("///",$_SESSION['recipient']);
@@ -38,7 +38,7 @@ $password = $_SESSION['pwd'];
     if($_SERVER["REQUEST_METHOD"] == "GET")
     {
 
-        if($login != "sylvere18" || $password != "web43947")
+        if($login != "sylvere18" || $password != "sylvere18itgate")
         {
             die("non");
         }else{

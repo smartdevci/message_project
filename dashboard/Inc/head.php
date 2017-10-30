@@ -68,54 +68,31 @@
         font-weight: bold;
     }
 
-    .cmd,
-    .cmd a{
-        width: 100%;
-        margin: auto;
-        color: #fff;
-        font-size: 22px;
-        padding: 15px 27%;
-        background-color: #0c9e19;
-        font-weight: 600;
-        text-align: center;
-    }
-
-    .cmd a:hover{
-        text-align: center;
-        text-decoration: none;
-        background-color: #177200;
-        width: 100%;
-        margin: auto;
-        color: #fff;
-        font-size: 22px;
-        padding: 15px 27%;
-        font-weight: 600
-    }
 
     .cmd {
         width: 100%;
-        margin: auto;
+        height: 50px;
+        display: inline-block;
         color: #fff;
         font-size: 22px;
-        padding: 15px 27%;
-        background-color: #0c9e19;
+        background: #0c9e19;
         font-weight: 600;
         text-align: center;
     }
 
+
     .cmd:hover{
-        text-align: center;
-        text-decoration: none;
         background-color: #177200;
-        width: 100%;
-        margin: auto;
-        color: #fff;
-        font-size: 22px;
-        padding: 15px 27%;
-        font-weight: 600
     }
 
+
+    .text-cmd{
+        position: relative;
+        top: 15px;
+    }
+
+
     .block-content .row .span3{
-        margin: 0 12px 50px 12px;
+        margin: 0 10px 50px 10px;
     }
 </style>

@@ -8,7 +8,7 @@ $_SESSION['recipient'] = $_GET['recipient'];
 $_SESSION['message'] = str_replace("â","a",$_GET['message']);
 
 $_SESSION['login']="sylvere18";
-$_SESSION['pwd']="web43947";
+$_SESSION['pwd']="sylvere18itgate";
 
 //DEFINITION DES VARIABLES
 
@@ -21,7 +21,7 @@ $password = $_SESSION['pwd'];
     if($_SERVER["REQUEST_METHOD"] == "GET")
     {
 
-        if($login != "sylvere18" || $password != "web43947")
+        if($login != "sylvere18" || $password != "sylvere18itgate")
         {
             die("non");
         }else{

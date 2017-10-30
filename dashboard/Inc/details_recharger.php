@@ -92,7 +92,9 @@
                                                 data-id="<?php echo $offre['id_offre'] ?>"
                                                 data-pack="<?php echo $offre['nombre_sms'] ?>"
                                         >
-                                            COMMANDER
+                                            <span class="text-cmd">
+                                                COMMANDER
+                                            </span>
                                         </span>
                                     </td>
                                 </tr>

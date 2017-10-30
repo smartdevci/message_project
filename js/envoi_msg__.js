@@ -1,7 +1,6 @@
 /**
  * Created by Melaine on 18/08/2017.
  */
-
 var nombre_caractere_un_msg=160;
 var nombre_message=1;
 var nombre_message_tout=1;
@@ -346,25 +345,7 @@ function addEvent() {
 
 
 
-function ajouterEvent()
-{
 
-    $('.les_contacts').click(function(){
-        //alert($(this).html());
-        var nom=$(this).html();
-        var indice=tableau_numeros.indexOf(nom);
-        var indice_fin=(indice==0)?1:indice;
-        //alert('okkkk');
-        //alert(indice);
-
-        tableau_numeros.splice(indice,indice_fin);
-        $(this).hide(300);
-
-        //$(this).remove();
-        //$('.les_contacts.'+$(this).html())
-    });
-
-}
 
 
 
@@ -398,8 +379,6 @@ function ajouterNumeroDestinataire(numero)
 {
     tableau_numeros.push(numero);
     identification_unique++;
-    //alert(tableau_numeros.toString());
-    ajouterEvent();
 }
 
 function ajouterGroupeDestinataire(groupe_id)

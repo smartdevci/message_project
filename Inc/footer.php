@@ -6,7 +6,7 @@
 <!--                <a class="" style="color: #fff; "><span class="fa fa-facebook-official fa-2x text-center"></span></a>-->
                 <span class="pull-right">Design by
                     <span class="text-success">
-                        <a style="color: #fff; font-weight: bold;" href="www.appsmartdev.com" data-toggle="tooltip" title="www.appsmartdev.com" target="_blank">SMARTDEV</a>
+                        <a style="color: #fff; font-weight: bold;" href="www.smartdevci.com" data-toggle="tooltip" title="www.smartdevci.com" target="_blank">SMARTDEV</a>
                     </span>
                 </span>
             </div>
